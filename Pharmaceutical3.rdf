@@ -1,0 +1,2249 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.pharmaceutical.org"
+     xml:base="http://www.pharmaceutical.org"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:www="http://www.pharmaceutical.org#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:http="http://"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:www1="http://www.pharmaceutical.org:"
+     xmlns:schema="https://schema.org/">
+    <owl:Ontology rdf:about="http://www.pharmaceutical.org"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.pharmaceutical.orghasDate -->
+
+    <owl:AnnotationProperty rdf:about="http://www.pharmaceutical.orghasDate"/>
+    
+
+
+    <!-- http://www.pharmaceutical.orghasDosage -->
+
+    <owl:AnnotationProperty rdf:about="http://www.pharmaceutical.orghasDosage"/>
+    
+
+
+    <!-- http://www.pharmaceutical.orginvolvesDrug -->
+
+    <owl:AnnotationProperty rdf:about="http://www.pharmaceutical.orginvolvesDrug"/>
+    
+
+
+    <!-- http://www.pharmaceutical.orginvolvesPatient -->
+
+    <owl:AnnotationProperty rdf:about="http://www.pharmaceutical.orginvolvesPatient"/>
+    
+
+
+    <!-- http://www.pharmaceutical.orgresultedIn -->
+
+    <owl:AnnotationProperty rdf:about="http://www.pharmaceutical.orgresultedIn"/>
+    
+
+
+    <!-- http://www.pharmaceutical.org#approvalDate -->
+
+    <owl:AnnotationProperty rdf:about="http://www.pharmaceutical.org#approvalDate"/>
+    
+
+
+    <!-- http://www.pharmaceutical.org#authority -->
+
+    <owl:AnnotationProperty rdf:about="http://www.pharmaceutical.org#authority"/>
+    
+
+
+    <!-- http://www.pharmaceutical.org#dosageAmount -->
+
+    <owl:AnnotationProperty rdf:about="http://www.pharmaceutical.org#dosageAmount"/>
+    
+
+
+    <!-- http://www.pharmaceutical.org#frequency -->
+
+    <owl:AnnotationProperty rdf:about="http://www.pharmaceutical.org#frequency"/>
+    
+
+
+    <!-- http://www.pharmaceutical.org#halfLifeUnit -->
+
+    <owl:AnnotationProperty rdf:about="http://www.pharmaceutical.org#halfLifeUnit"/>
+    
+
+
+    <!-- http://www.pharmaceutical.org#halfLifeValue -->
+
+    <owl:AnnotationProperty rdf:about="http://www.pharmaceutical.org#halfLifeValue"/>
+    
+
+
+    <!-- http://www.pharmaceutical.org#publicationDate -->
+
+    <owl:AnnotationProperty rdf:about="http://www.pharmaceutical.org#publicationDate"/>
+    
+
+
+    <!-- http://www.pharmaceutical.org#rejectionReason -->
+
+    <owl:AnnotationProperty rdf:about="http://www.pharmaceutical.org#rejectionReason"/>
+    
+
+
+    <!-- http://www.pharmaceutical.org#storageCondition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.pharmaceutical.org#storageCondition"/>
+    
+
+
+    <!-- http://www.pharmaceutical.org#version -->
+
+    <owl:AnnotationProperty rdf:about="http://www.pharmaceutical.org#version"/>
+    
+
+
+    <!-- http://www.pharmaceutical.org:hasDate -->
+
+    <owl:AnnotationProperty rdf:about="http://www.pharmaceutical.org:hasDate"/>
+    
+
+
+    <!-- http://www.pharmaceutical.org:hasDosage -->
+
+    <owl:AnnotationProperty rdf:about="http://www.pharmaceutical.org:hasDosage"/>
+    
+
+
+    <!-- http://www.pharmaceutical.org:involvesDrug -->
+
+    <owl:AnnotationProperty rdf:about="http://www.pharmaceutical.org:involvesDrug"/>
+    
+
+
+    <!-- http://www.pharmaceutical.org:involvesPatient -->
+
+    <owl:AnnotationProperty rdf:about="http://www.pharmaceutical.org:involvesPatient"/>
+    
+
+
+    <!-- http://www.pharmaceutical.org:resultedIn -->
+
+    <owl:AnnotationProperty rdf:about="http://www.pharmaceutical.org:resultedIn"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.pharmaceutical.org#hasDosage -->
+
+    <owl:ObjectProperty rdf:about="http://www.pharmaceutical.org#hasDosage">
+        <rdfs:domain rdf:resource="http://www.pharmaceutical.org#Adverse_Drug_Event"/>
+        <rdfs:range rdf:resource="http://www.pharmaceutical.org#Recommended_Dosage"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.pharmaceutical.org#has_Active_Ingredient -->
+
+    <owl:ObjectProperty rdf:about="http://www.pharmaceutical.org#has_Active_Ingredient">
+        <rdfs:domain rdf:resource="http://www.pharmaceutical.org#Pharmaceutical_Drug"/>
+        <rdfs:range rdf:resource="http://www.pharmaceutical.org#ActiveIngredient"/>
+        <rdfs:comment>Links a pharmaceutical drug to its active ingredient, which is the substance responsible for its therapeutic effect.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.pharmaceutical.org#has_Brand_Name -->
+
+    <owl:ObjectProperty rdf:about="http://www.pharmaceutical.org#has_Brand_Name">
+        <rdfs:domain rdf:resource="http://www.pharmaceutical.org#Pharmaceutical_Drug"/>
+        <rdfs:range rdf:resource="http://www.pharmaceutical.org#BrandName"/>
+        <rdfs:comment>Indicates the commercial name under which a pharmaceutical drug is marketed.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.pharmaceutical.org#has_Contraindication -->
+
+    <owl:ObjectProperty rdf:about="http://www.pharmaceutical.org#has_Contraindication">
+        <rdfs:domain rdf:resource="http://www.pharmaceutical.org#Pharmaceutical_Drug"/>
+        <rdfs:range rdf:resource="http://www.pharmaceutical.org#Contraindication"/>
+        <rdfs:comment>Identifies specific conditions or factors that serve as reasons to withhold a certain medical treatment due to the harm it could cause the patient.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.pharmaceutical.org#has_Dosage_Form -->
+
+    <owl:ObjectProperty rdf:about="http://www.pharmaceutical.org#has_Dosage_Form">
+        <rdfs:domain rdf:resource="http://www.pharmaceutical.org#Pharmaceutical_Drug"/>
+        <rdfs:range rdf:resource="http://www.pharmaceutical.org#DosageForm"/>
+        <rdfs:comment>Specifies the form in which a pharmaceutical drug is administered, such as tablet, capsule, or injection</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.pharmaceutical.org#has_Generic_Name -->
+
+    <owl:ObjectProperty rdf:about="http://www.pharmaceutical.org#has_Generic_Name">
+        <rdfs:domain rdf:resource="http://www.pharmaceutical.org#Pharmaceutical_Drug"/>
+        <rdfs:comment>Represents the official non-proprietary name of a pharmaceutical drug, as recognized by health authorities.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.pharmaceutical.org#has_Half_Life -->
+
+    <owl:ObjectProperty rdf:about="http://www.pharmaceutical.org#has_Half_Life">
+        <rdfs:domain rdf:resource="http://www.pharmaceutical.org#Pharmaceutical_Drug"/>
+        <rdfs:range rdf:resource="http://www.pharmaceutical.org#HalfLife"/>
+        <rdfs:comment xml:lang="en">Represents the time it takes for the concentration of the drug in the bloodstream to reduce to half its initial value.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.pharmaceutical.org#has_Legal_Classification -->
+
+    <owl:ObjectProperty rdf:about="http://www.pharmaceutical.org#has_Legal_Classification">
+        <owl:inverseOf rdf:resource="http://www.pharmaceutical.org#isClassificationOf"/>
+        <rdfs:domain rdf:resource="http://www.pharmaceutical.org#Pharmaceutical_Drug"/>
+        <rdfs:range rdf:resource="http://www.pharmaceutical.org#LegalClassification"/>
+        <rdfs:comment xml:lang="en">Specifies the legal classification of the pharmaceutical drug, which may determine its availability and prescription requirements.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.pharmaceutical.org#has_Mechanism_Of_Action -->
+
+    <owl:ObjectProperty rdf:about="http://www.pharmaceutical.org#has_Mechanism_Of_Action">
+        <rdfs:domain rdf:resource="http://www.pharmaceutical.org#Pharmaceutical_Drug"/>
+        <rdfs:range rdf:resource="http://www.pharmaceutical.org#Mechanism_Of_Action"/>
+        <rdfs:comment>Describes the biochemical process through which a pharmaceutical drug exerts its therapeutic effect.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.pharmaceutical.org#has_Recommended_Dosage -->
+
+    <owl:ObjectProperty rdf:about="http://www.pharmaceutical.org#has_Recommended_Dosage">
+        <rdfs:domain rdf:resource="http://www.pharmaceutical.org#Pharmaceutical_Drug"/>
+        <rdfs:range rdf:resource="http://www.pharmaceutical.org#Recommended_Dosage"/>
+        <rdfs:comment>Specifies the dosage of the pharmaceutical drug that is recommended for effective treatment, including frequency and amount.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.pharmaceutical.org#has_Regulatory_Approval_Status -->
+
+    <owl:ObjectProperty rdf:about="http://www.pharmaceutical.org#has_Regulatory_Approval_Status">
+        <rdfs:domain rdf:resource="http://www.pharmaceutical.org#Pharmaceutical_Drug"/>
+        <rdfs:range rdf:resource="http://www.pharmaceutical.org#Regulatory_Approval_Status"/>
+        <rdfs:comment xml:lang="en">Indicates the current status of regulatory approval for the pharmaceutical drug, such as approved, pending, or rejected.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.pharmaceutical.org#has_Side_Effect -->
+
+    <owl:ObjectProperty rdf:about="http://www.pharmaceutical.org#has_Side_Effect">
+        <rdfs:domain rdf:resource="http://www.pharmaceutical.org#Pharmaceutical_Drug"/>
+        <rdfs:range rdf:resource="http://www.pharmaceutical.org#SideEffect"/>
+        <rdfs:comment>Describes any unintended or adverse effects that may occur as a result of taking the pharmaceutical drug.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.pharmaceutical.org#has_Storage_Requirement -->
+
+    <owl:ObjectProperty rdf:about="http://www.pharmaceutical.org#has_Storage_Requirement">
+        <rdfs:domain rdf:resource="http://www.pharmaceutical.org#Pharmaceutical_Drug"/>
+        <rdfs:range rdf:resource="http://www.pharmaceutical.org#Storage_Requirement"/>
+        <rdfs:comment>Indicates the conditions under which a pharmaceutical drug should be stored to maintain its efficacy and safety.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.pharmaceutical.org#has_Treatment -->
+
+    <owl:ObjectProperty rdf:about="http://www.pharmaceutical.org#has_Treatment">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.pharmaceutical.org#Disease_Condition"/>
+        <rdfs:range rdf:resource="http://www.pharmaceutical.org#Treatment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.pharmaceutical.org#includes_Drug -->
+
+    <owl:ObjectProperty rdf:about="http://www.pharmaceutical.org#includes_Drug">
+        <owl:inverseOf rdf:resource="http://www.pharmaceutical.org#is_In_Essential_Medicines_List"/>
+        <rdfs:domain rdf:resource="http://www.pharmaceutical.org#Essential_Medicines_List"/>
+        <rdfs:range rdf:resource="http://www.pharmaceutical.org#Pharmaceutical_Drug"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.pharmaceutical.org#interacts_With -->
+
+    <owl:ObjectProperty rdf:about="http://www.pharmaceutical.org#interacts_With">
+        <rdfs:domain rdf:resource="http://www.pharmaceutical.org#Pharmaceutical_Drug"/>
+        <rdfs:range rdf:resource="http://www.pharmaceutical.org#Pharmaceutical_Drug"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.pharmaceutical.org#involvesDrug -->
+
+    <owl:ObjectProperty rdf:about="http://www.pharmaceutical.org#involvesDrug">
+        <rdfs:domain rdf:resource="http://www.pharmaceutical.org#Adverse_Drug_Event"/>
+        <rdfs:range rdf:resource="http://www.pharmaceutical.org#Pharmaceutical_Drug"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.pharmaceutical.org#involvesPatient -->
+
+    <owl:ObjectProperty rdf:about="http://www.pharmaceutical.org#involvesPatient">
+        <rdfs:domain rdf:resource="http://www.pharmaceutical.org#Adverse_Drug_Event"/>
+        <rdfs:range rdf:resource="http://www.pharmaceutical.org#Patient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.pharmaceutical.org#isClassificationOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.pharmaceutical.org#isClassificationOf">
+        <rdfs:domain rdf:resource="http://www.pharmaceutical.org#LegalClassification"/>
+        <rdfs:range rdf:resource="http://www.pharmaceutical.org#Pharmaceutical_Drug"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.pharmaceutical.org#is_In_Essential_Medicines_List -->
+
+    <owl:ObjectProperty rdf:about="http://www.pharmaceutical.org#is_In_Essential_Medicines_List">
+        <rdfs:domain rdf:resource="http://www.pharmaceutical.org#Pharmaceutical_Drug"/>
+        <rdfs:range rdf:resource="http://www.pharmaceutical.org#Essential_Medicines_List"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.pharmaceutical.org#resultedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.pharmaceutical.org#resultedIn">
+        <rdfs:domain rdf:resource="http://www.pharmaceutical.org#Adverse_Drug_Event"/>
+        <rdfs:range rdf:resource="http://www.pharmaceutical.org#SideEffect"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.pharmaceutical.org#treats_Condition -->
+
+    <owl:ObjectProperty rdf:about="http://www.pharmaceutical.org#treats_Condition">
+        <rdfs:domain rdf:resource="http://www.pharmaceutical.org#Pharmaceutical_Drug"/>
+        <rdfs:range rdf:resource="http://www.pharmaceutical.org#Disease_Condition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.pharmaceutical.org#active_Ingredient -->
+
+    <owl:DatatypeProperty rdf:about="http://www.pharmaceutical.org#active_Ingredient">
+        <rdfs:domain rdf:resource="http://www.pharmaceutical.org#Pharmaceutical_Drug"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The active substance in a pharmaceutical drug that is responsible for its therapeutic effect.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.pharmaceutical.org#brand_Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.pharmaceutical.org#brand_Name">
+        <rdfs:domain rdf:resource="http://www.pharmaceutical.org#Pharmaceutical_Drug"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The proprietary name under which a pharmaceutical drug is marketed, often used for branding purposes.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.pharmaceutical.org#contraindication -->
+
+    <owl:DatatypeProperty rdf:about="http://www.pharmaceutical.org#contraindication">
+        <rdfs:domain rdf:resource="http://www.pharmaceutical.org#Pharmaceutical_Drug"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Specific conditions or factors that indicate the drug should not be used due to potential harm to the patient.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.pharmaceutical.org#dosage_Form -->
+
+    <owl:DatatypeProperty rdf:about="http://www.pharmaceutical.org#dosage_Form">
+        <rdfs:domain rdf:resource="http://www.pharmaceutical.org#Pharmaceutical_Drug"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The physical form in which a pharmaceutical drug is produced and administered, such as tablet, capsule, or injection.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.pharmaceutical.org#emlTherapeuticCategory -->
+
+    <owl:DatatypeProperty rdf:about="http://www.pharmaceutical.org#emlTherapeuticCategory">
+        <rdfs:domain rdf:resource="http://www.pharmaceutical.org#Pharmaceutical_Drug"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>EML therapeutic category</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.pharmaceutical.org#generic_Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.pharmaceutical.org#generic_Name">
+        <rdfs:domain rdf:resource="http://www.pharmaceutical.org#Pharmaceutical_Drug"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The official non-proprietary name of a pharmaceutical drug, recognized by health authorities and used universally.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.pharmaceutical.org#half_Life -->
+
+    <owl:DatatypeProperty rdf:about="http://www.pharmaceutical.org#half_Life">
+        <rdfs:domain rdf:resource="http://www.pharmaceutical.org#Pharmaceutical_Drug"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="en">The time required for the concentration of the drug in the bloodstream to reduce to half its initial value.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.pharmaceutical.org#hasDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.pharmaceutical.org#hasDate">
+        <rdfs:domain rdf:resource="http://www.pharmaceutical.org#Adverse_Drug_Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.pharmaceutical.org#legal_Classification -->
+
+    <owl:DatatypeProperty rdf:about="http://www.pharmaceutical.org#legal_Classification">
+        <rdfs:domain rdf:resource="http://www.pharmaceutical.org#Pharmaceutical_Drug"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The legal classification of the pharmaceutical drug, which may determine its availability and prescription requirements.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.pharmaceutical.org#mechanism_Of_Action -->
+
+    <owl:DatatypeProperty rdf:about="http://www.pharmaceutical.org#mechanism_Of_Action">
+        <rdfs:domain rdf:resource="http://www.pharmaceutical.org#Pharmaceutical_Drug"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The biochemical process through which a pharmaceutical drug exerts its therapeutic effect.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.pharmaceutical.org#recommended_Dosage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.pharmaceutical.org#recommended_Dosage">
+        <rdfs:domain rdf:resource="http://www.pharmaceutical.org#Pharmaceutical_Drug"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The dosage of the pharmaceutical drug that is recommended for effective treatment, including frequency and amount.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.pharmaceutical.org#regulatory_Approval_Status -->
+
+    <owl:DatatypeProperty rdf:about="http://www.pharmaceutical.org#regulatory_Approval_Status">
+        <rdfs:domain rdf:resource="http://www.pharmaceutical.org#Pharmaceutical_Drug"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The current status of regulatory approval for the pharmaceutical drug, such as approved, pending, or rejected.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.pharmaceutical.org#side_Effect -->
+
+    <owl:DatatypeProperty rdf:about="http://www.pharmaceutical.org#side_Effect">
+        <rdfs:domain rdf:resource="http://www.pharmaceutical.org#Pharmaceutical_Drug"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Any unintended or adverse effects that may occur as a result of taking the pharmaceutical drug.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.pharmaceutical.org#storage_Requirement -->
+
+    <owl:DatatypeProperty rdf:about="http://www.pharmaceutical.org#storage_Requirement">
+        <rdfs:domain rdf:resource="http://www.pharmaceutical.org#Pharmaceutical_Drug"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Conditions under which a pharmaceutical drug should be stored to maintain its efficacy and safety.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/Disease_Condition -->
+
+    <owl:Class rdf:about="http://example.org/Disease_Condition"/>
+    
+
+
+    <!-- http://schema.org/Organization -->
+
+    <owl:Class rdf:about="http://schema.org/Organization"/>
+    
+
+
+    <!-- http://www.pharmaceutical.org#ActiveIngredient -->
+
+    <owl:Class rdf:about="http://www.pharmaceutical.org#ActiveIngredient">
+        <rdfs:subClassOf rdf:resource="http://www.pharmaceutical.org#Pharmaceutical_Drug"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Adverse_Drug_Event -->
+
+    <owl:Class rdf:about="http://www.pharmaceutical.org#Adverse_Drug_Event"/>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Analgesics -->
+
+    <owl:Class rdf:about="http://www.pharmaceutical.org#Analgesics">
+        <rdfs:subClassOf rdf:resource="http://www.pharmaceutical.org#DrugCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Antibiotics -->
+
+    <owl:Class rdf:about="http://www.pharmaceutical.org#Antibiotics">
+        <rdfs:subClassOf rdf:resource="http://www.pharmaceutical.org#DrugCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Antivirals -->
+
+    <owl:Class rdf:about="http://www.pharmaceutical.org#Antivirals">
+        <rdfs:subClassOf rdf:resource="http://www.pharmaceutical.org#DrugCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmaceutical.org#BrandName -->
+
+    <owl:Class rdf:about="http://www.pharmaceutical.org#BrandName">
+        <rdfs:subClassOf rdf:resource="http://www.pharmaceutical.org#Pharmaceutical_Drug"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Capsule -->
+
+    <owl:Class rdf:about="http://www.pharmaceutical.org#Capsule">
+        <rdfs:subClassOf rdf:resource="http://www.pharmaceutical.org#DosageForm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Contraindication -->
+
+    <owl:Class rdf:about="http://www.pharmaceutical.org#Contraindication">
+        <rdfs:subClassOf rdf:resource="http://www.pharmaceutical.org#Drug_Interaction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Controlled_Substance -->
+
+    <owl:Class rdf:about="http://www.pharmaceutical.org#Controlled_Substance">
+        <rdfs:subClassOf rdf:resource="http://www.pharmaceutical.org#LegalClassification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Disease_And_Treatment -->
+
+    <owl:Class rdf:about="http://www.pharmaceutical.org#Disease_And_Treatment"/>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Disease_Condition -->
+
+    <owl:Class rdf:about="http://www.pharmaceutical.org#Disease_Condition">
+        <rdfs:subClassOf rdf:resource="http://www.pharmaceutical.org#Disease_And_Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmaceutical.org#DosageForm -->
+
+    <owl:Class rdf:about="http://www.pharmaceutical.org#DosageForm">
+        <rdfs:subClassOf rdf:resource="http://www.pharmaceutical.org#Pharmaceutical_Drug"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmaceutical.org#DrugCategory -->
+
+    <owl:Class rdf:about="http://www.pharmaceutical.org#DrugCategory">
+        <rdfs:subClassOf rdf:resource="http://www.pharmaceutical.org#Pharmaceutical_Drug"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Drug_Interaction -->
+
+    <owl:Class rdf:about="http://www.pharmaceutical.org#Drug_Interaction"/>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Essential_Medicines_List -->
+
+    <owl:Class rdf:about="http://www.pharmaceutical.org#Essential_Medicines_List">
+        <rdfs:subClassOf rdf:resource="http://www.pharmaceutical.org#Regulatory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmaceutical.org#HalfLife -->
+
+    <owl:Class rdf:about="http://www.pharmaceutical.org#HalfLife">
+        <rdfs:subClassOf rdf:resource="http://www.pharmaceutical.org#Usage_And_Administration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Injection -->
+
+    <owl:Class rdf:about="http://www.pharmaceutical.org#Injection">
+        <rdfs:subClassOf rdf:resource="http://www.pharmaceutical.org#DosageForm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmaceutical.org#LegalClassification -->
+
+    <owl:Class rdf:about="http://www.pharmaceutical.org#LegalClassification">
+        <rdfs:subClassOf rdf:resource="http://www.pharmaceutical.org#Regulatory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Mechanism_Of_Action -->
+
+    <owl:Class rdf:about="http://www.pharmaceutical.org#Mechanism_Of_Action">
+        <rdfs:subClassOf rdf:resource="http://www.pharmaceutical.org#Drug_Interaction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Over-the-Counter -->
+
+    <owl:Class rdf:about="http://www.pharmaceutical.org#Over-the-Counter">
+        <rdfs:subClassOf rdf:resource="http://www.pharmaceutical.org#LegalClassification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Patient -->
+
+    <owl:Class rdf:about="http://www.pharmaceutical.org#Patient">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Pharmaceutical_Drug -->
+
+    <owl:Class rdf:about="http://www.pharmaceutical.org#Pharmaceutical_Drug"/>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Prescription -->
+
+    <owl:Class rdf:about="http://www.pharmaceutical.org#Prescription">
+        <rdfs:subClassOf rdf:resource="http://www.pharmaceutical.org#LegalClassification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Recommended_Dosage -->
+
+    <owl:Class rdf:about="http://www.pharmaceutical.org#Recommended_Dosage">
+        <rdfs:subClassOf rdf:resource="http://www.pharmaceutical.org#Usage_And_Administration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Regulatory -->
+
+    <owl:Class rdf:about="http://www.pharmaceutical.org#Regulatory"/>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Regulatory_Approval_Status -->
+
+    <owl:Class rdf:about="http://www.pharmaceutical.org#Regulatory_Approval_Status">
+        <rdfs:subClassOf rdf:resource="http://www.pharmaceutical.org#Regulatory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmaceutical.org#SideEffect -->
+
+    <owl:Class rdf:about="http://www.pharmaceutical.org#SideEffect">
+        <rdfs:subClassOf rdf:resource="http://www.pharmaceutical.org#Drug_Interaction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Storage_Requirement -->
+
+    <owl:Class rdf:about="http://www.pharmaceutical.org#Storage_Requirement">
+        <rdfs:subClassOf rdf:resource="http://www.pharmaceutical.org#Usage_And_Administration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Tablet -->
+
+    <owl:Class rdf:about="http://www.pharmaceutical.org#Tablet">
+        <rdfs:subClassOf rdf:resource="http://www.pharmaceutical.org#DosageForm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Treatment -->
+
+    <owl:Class rdf:about="http://www.pharmaceutical.org#Treatment">
+        <rdfs:subClassOf rdf:resource="http://www.pharmaceutical.org#Disease_And_Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Usage_And_Administration -->
+
+    <owl:Class rdf:about="http://www.pharmaceutical.org#Usage_And_Administration"/>
+    
+
+
+    <!-- http://www.pharmaceutical.org#approved -->
+
+    <owl:Class rdf:about="http://www.pharmaceutical.org#approved">
+        <rdfs:subClassOf rdf:resource="http://www.pharmaceutical.org#Regulatory_Approval_Status"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmaceutical.org#pending -->
+
+    <owl:Class rdf:about="http://www.pharmaceutical.org#pending">
+        <rdfs:subClassOf rdf:resource="http://www.pharmaceutical.org#Regulatory_Approval_Status"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pharmaceutical.org#rejected -->
+
+    <owl:Class rdf:about="http://www.pharmaceutical.org#rejected">
+        <rdfs:subClassOf rdf:resource="http://www.pharmaceutical.org#Regulatory_Approval_Status"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/Chronic_Obstructive_Pulmonary_Disease_(COPD) -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/Chronic_Obstructive_Pulmonary_Disease_(COPD)">
+        <rdf:type rdf:resource="http://example.org/Disease_Condition"/>
+        <www:contraindication>Beta-blockers may worsen symptoms in some cases</www:contraindication>
+        <www:legal_Classification>N/A (applies to drugs)</www:legal_Classification>
+        <www:recommended_Dosage>Varies depending on severity and prescribed medications</www:recommended_Dosage>
+        <www:regulatory_Approval_Status>N/A (applies to drugs, not diseases)</www:regulatory_Approval_Status>
+        <www:side_Effect>Difficulty breathing, fatigue, frequent respiratory infections</www:side_Effect>
+        <www:storage_Requirement>N/A for disease; refer to prescribed medication storage</www:storage_Requirement>
+        <rdfs:comment>
+    A chronic inflammatory lung disease that causes obstructed airflow from the lungs. Common symptoms include breathing difficulty, cough, mucus (sputum) production, and wheezing.
+  </rdfs:comment>
+        <rdfs:label>Chronic Obstructive Pulmonary Disease (COPD)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#ACE_Inhibitor -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#ACE_Inhibitor">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Treatment"/>
+        <www:has_Active_Ingredient rdf:resource="http://www.pharmaceutical.org#Lisinopril"/>
+        <www:has_Brand_Name rdf:resource="http://www.pharmaceutical.org#Zestril"/>
+        <www:has_Contraindication rdf:resource="http://www.pharmaceutical.org#Pregnancy"/>
+        <www:has_Mechanism_Of_Action rdf:resource="http://www.pharmaceutical.org#Angiotensin-converting_enzyme_inhibition"/>
+        <www:has_Side_Effect rdf:resource="http://www.pharmaceutical.org#Cough"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Active_gastrointestinal_bleeding -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Active_gastrointestinal_bleeding">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Contraindication"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Active_liver_disease -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Active_liver_disease">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Contraindication"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Advil -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Advil">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#BrandName"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Albuterol -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Albuterol">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#ActiveIngredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Albuterol_Inhalation_Solution -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Albuterol_Inhalation_Solution">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Injection"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Allergic_Reaction -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Allergic_Reaction">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#SideEffect"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Allergic_Rhinitis -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Allergic_Rhinitis">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Disease_Condition"/>
+        <www:has_Treatment rdf:resource="http://www.pharmaceutical.org#Antihistamine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Amoxicillin -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Amoxicillin">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Antibiotics"/>
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Recommended_Dosage"/>
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#approved"/>
+        <www:has_Recommended_Dosage rdf:resource="http://www.pharmaceutical.org#Amoxicillin_Standard_Dosage"/>
+        <www:has_Regulatory_Approval_Status rdf:resource="http://www.pharmaceutical.org#Amoxicillin_Approved"/>
+        <www:is_In_Essential_Medicines_List rdf:resource="http://www.pharmaceutical.org#Amoxicillin_EML_Entry"/>
+        <www:is_In_Essential_Medicines_List rdf:resource="http://www.pharmaceutical.org#WHO_EML_2023"/>
+        <www:emlTherapeuticCategory>Antibacterials</www:emlTherapeuticCategory>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Amoxicillin_Approved -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Amoxicillin_Approved">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#approved"/>
+        <www:has_Regulatory_Approval_Status rdf:resource="http://www.pharmaceutical.org#Amoxicillin"/>
+        <www:approvalDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1972-01-01</www:approvalDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Amoxicillin_EML_Entry -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Amoxicillin_EML_Entry">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Essential_Medicines_List"/>
+        <www:is_In_Essential_Medicines_List rdf:resource="http://www.pharmaceutical.org#WHO_EML_2023"/>
+        <rdfs:comment>Amoxicillin is included in the WHO Model List of Essential Medicines</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Amoxicillin_Standard_Dosage -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Amoxicillin_Standard_Dosage">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Recommended_Dosage"/>
+        <www:has_Recommended_Dosage rdf:resource="http://www.pharmaceutical.org#Amoxicillin"/>
+        <www:dosageAmount>250-500mg</www:dosageAmount>
+        <www:frequency>every 8 hours</www:frequency>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Amoxicillin_Storage -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Amoxicillin_Storage">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Storage_Requirement"/>
+        <www:has_Storage_Requirement rdf:resource="http://www.pharmaceutical.org#Amoxicillin"/>
+        <www:storageCondition>Room temperature</www:storageCondition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Analgesics -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Analgesics">
+        <www:has_Regulatory_Approval_Status rdf:resource="http://www.pharmaceutical.org#approved"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Angiotensin-converting_enzyme_inhibition -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Angiotensin-converting_enzyme_inhibition">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Mechanism_Of_Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Anti-inflammatory_effects_via_glucocorticoid_receptor_activation -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Anti-inflammatory_effects_via_glucocorticoid_receptor_activation">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Mechanism_Of_Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Antibiotics -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Antibiotics">
+        <www:has_Regulatory_Approval_Status rdf:resource="http://www.pharmaceutical.org#approved"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Anticonvulsants -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Anticonvulsants">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Treatment"/>
+        <www:has_Active_Ingredient rdf:resource="http://www.pharmaceutical.org#Lamotrigine"/>
+        <www:has_Brand_Name rdf:resource="http://www.pharmaceutical.org#Lamictal"/>
+        <www:has_Contraindication rdf:resource="http://www.pharmaceutical.org#Hypersensitivity_to_active_ingredient"/>
+        <www:has_Mechanism_Of_Action rdf:resource="http://www.pharmaceutical.org#Modulation_of_neurotransmitter_activity"/>
+        <www:has_Side_Effect rdf:resource="http://www.pharmaceutical.org#Dizziness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Antidepressant -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Antidepressant">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Treatment"/>
+        <www:has_Active_Ingredient rdf:resource="http://www.pharmaceutical.org#Sertraline"/>
+        <www:has_Brand_Name rdf:resource="http://www.pharmaceutical.org#Zoloft"/>
+        <www:has_Contraindication rdf:resource="http://www.pharmaceutical.org#Monoamine_oxidase_inhibitor_use"/>
+        <www:has_Mechanism_Of_Action rdf:resource="http://www.pharmaceutical.org#Serotonin_reuptake_inhibition"/>
+        <www:has_Side_Effect rdf:resource="http://www.pharmaceutical.org#Weight_gain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Antihistamine -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Antihistamine">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Treatment"/>
+        <www:has_Active_Ingredient rdf:resource="http://www.pharmaceutical.org#Cetirizine"/>
+        <www:has_Brand_Name rdf:resource="http://www.pharmaceutical.org#Zyrtec"/>
+        <www:has_Contraindication rdf:resource="http://www.pharmaceutical.org#Narrow_angle_glaucoma"/>
+        <www:has_Mechanism_Of_Action rdf:resource="http://www.pharmaceutical.org#Histamine_H1_receptor_blockade"/>
+        <www:has_Side_Effect rdf:resource="http://www.pharmaceutical.org#Drowsiness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Aspirin -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Aspirin">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Analgesics"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Asthma -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Asthma">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Disease_Condition"/>
+        <www:has_Treatment rdf:resource="http://www.pharmaceutical.org#Bronchodilator"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Atorvastatin -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Atorvastatin">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#ActiveIngredient"/>
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Prescription"/>
+        <www:has_Legal_Classification rdf:resource="http://www.pharmaceutical.org#Atorvastatin_Rx"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Atorvastatin_ -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Atorvastatin_"/>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Atorvastatin_Approved -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Atorvastatin_Approved">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#approved"/>
+        <www:has_Regulatory_Approval_Status rdf:resource="http://www.pharmaceutical.org#Atorvastatin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Atorvastatin_HalfLife -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Atorvastatin_HalfLife">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#HalfLife"/>
+        <www:has_Half_Life rdf:resource="http://www.pharmaceutical.org#Atorvastatin"/>
+        <www:halfLifeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">14.0</www:halfLifeValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Atorvastatin_Rx -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Atorvastatin_Rx">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Prescription"/>
+        <www:has_Legal_Classification rdf:resource="http://www.pharmaceutical.org#Atorvastatin"/>
+        <www:isClassificationOf rdf:resource="http://www.pharmaceutical.org#Atorvastatin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Atorvastatin_Standard_Dosage -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Atorvastatin_Standard_Dosage">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Recommended_Dosage"/>
+        <www:has_Recommended_Dosage rdf:resource="http://www.pharmaceutical.org#Atorvastatin"/>
+        <www:dosageAmount>10-80mg</www:dosageAmount>
+        <www:frequency>once daily</www:frequency>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Azithromycin -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Azithromycin">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Antibiotics"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Benralizumab -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Benralizumab">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Injection"/>
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#pending"/>
+        <www:has_Regulatory_Approval_Status rdf:resource="http://www.pharmaceutical.org#Benralizumab_Pending"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Benralizumab_Pending -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Benralizumab_Pending">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#pending"/>
+        <www:has_Regulatory_Approval_Status rdf:resource="http://www.pharmaceutical.org#Benralizumab"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Beta-2_adrenergic_receptor_agonism -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Beta-2_adrenergic_receptor_agonism">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Mechanism_Of_Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Beta-Blockers -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Beta-Blockers">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Treatment"/>
+        <www:has_Active_Ingredient rdf:resource="http://www.pharmaceutical.org#Metoprolol"/>
+        <www:has_Brand_Name rdf:resource="http://www.pharmaceutical.org#Lopressor"/>
+        <www:has_Contraindication rdf:resource="http://www.pharmaceutical.org#Severe_bradycardia"/>
+        <www:has_Mechanism_Of_Action rdf:resource="http://www.pharmaceutical.org#Blockade_of_beta-adrenergic_receptors"/>
+        <www:has_Side_Effect rdf:resource="http://www.pharmaceutical.org#Fatigue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Beta-blockers -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Beta-blockers">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Tablet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Blockade_of_beta-adrenergic_receptors -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Blockade_of_beta-adrenergic_receptors">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Mechanism_Of_Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Bronchodilator -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Bronchodilator">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Treatment"/>
+        <www:has_Active_Ingredient rdf:resource="http://www.pharmaceutical.org#Albuterol"/>
+        <www:has_Brand_Name rdf:resource="http://www.pharmaceutical.org#Proventil"/>
+        <www:has_Contraindication rdf:resource="http://www.pharmaceutical.org#Severe_heart_disease"/>
+        <www:has_Mechanism_Of_Action rdf:resource="http://www.pharmaceutical.org#Beta-2_adrenergic_receptor_agonism"/>
+        <www:has_Side_Effect rdf:resource="http://www.pharmaceutical.org#Tremors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Bronchodilators -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Bronchodilators">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Tablet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Budesonide -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Budesonide">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Capsule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Carbamazepine -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Carbamazepine">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Tablet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Case_001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Case_001">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Adverse_Drug_Event"/>
+        <www:hasDosage rdf:resource="http://www.pharmaceutical.org#Ibuprofen_Standard_Dosage"/>
+        <www:involvesDrug rdf:resource="http://www.pharmaceutical.org#Ibuprofen"/>
+        <www:involvesPatient rdf:resource="http://www.pharmaceutical.org#Patient_JohnDoe"/>
+        <www:resultedIn rdf:resource="http://www.pharmaceutical.org#Allergic_Reaction"/>
+        <www:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-05-01T14:30:00</www:hasDate>
+        <http:www.pharmaceutical.orghasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-05-01</http:www.pharmaceutical.orghasDate>
+        <http:www.pharmaceutical.orghasDosage rdf:resource="http://www.pharmaceutical.org#Ibuprofen_Standard_Dosage"/>
+        <http:www.pharmaceutical.orginvolvesDrug rdf:resource="http://www.pharmaceutical.org#Ibuprofen"/>
+        <http:www.pharmaceutical.orginvolvesPatient rdf:resource="http://www.pharmaceutical.org#Patient_JohnDoe"/>
+        <http:www.pharmaceutical.orgresultedIn rdf:resource="http://www.pharmaceutical.org#Allergic_Reaction"/>
+        <www1:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-05-01</www1:hasDate>
+        <www1:hasDosage rdf:resource="http://www.pharmaceutical.org#Ibuprofen_Standard_Dosage"/>
+        <www1:involvesDrug rdf:resource="http://www.pharmaceutical.org#Ibuprofen"/>
+        <www1:involvesPatient rdf:resource="http://www.pharmaceutical.org#Patient_JohnDoe"/>
+        <www1:resultedIn rdf:resource="http://www.pharmaceutical.org#Allergic_Reaction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Ceftriaxone -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Ceftriaxone">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Antibiotics"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Celecoxib -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Celecoxib">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Analgesics"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Cephalexin -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Cephalexin">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Antibiotics"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Cetirizine -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Cetirizine">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#ActiveIngredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Cetirizine_OTC -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Cetirizine_OTC">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Over-the-Counter"/>
+        <www:has_Legal_Classification rdf:resource="http://www.pharmaceutical.org#Cetirizine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Ciprofloxacin -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Ciprofloxacin">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Antibiotics"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Clavulanic_Acid -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Clavulanic_Acid"/>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Corticosteroids -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Corticosteroids">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Treatment"/>
+        <www:has_Active_Ingredient rdf:resource="http://www.pharmaceutical.org#Prednisone"/>
+        <www:has_Brand_Name rdf:resource="http://www.pharmaceutical.org#Deltasone"/>
+        <www:has_Contraindication rdf:resource="http://www.pharmaceutical.org#Systemic_fungal_infections"/>
+        <www:has_Mechanism_Of_Action rdf:resource="http://www.pharmaceutical.org#Anti-inflammatory_effects_via_glucocorticoid_receptor_activation"/>
+        <www:has_Side_Effect rdf:resource="http://www.pharmaceutical.org#Increased_risk_of_infection"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Cough -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Cough">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#SideEffect"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Deltasone -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Deltasone">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#BrandName"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Depression -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Depression">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Disease_Condition"/>
+        <www:has_Treatment rdf:resource="http://www.pharmaceutical.org#Antidepressant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Diabetes -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Diabetes">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Disease_Condition"/>
+        <www:has_Treatment rdf:resource="http://www.pharmaceutical.org#Insulin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Diclofenac -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Diclofenac">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Tablet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Diclofenac_ -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Diclofenac_">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Analgesics"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Diclofenac_Sodium -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Diclofenac_Sodium">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Analgesics"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Diuretics -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Diuretics">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Tablet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Dizziness -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Dizziness">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#SideEffect"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Doxycycline -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Doxycycline">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Antibiotics"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Drowsiness -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Drowsiness">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#SideEffect"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Duloxetine -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Duloxetine">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Capsule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Epilepsy -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Epilepsy">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Disease_Condition"/>
+        <www:has_Treatment rdf:resource="http://www.pharmaceutical.org#Anticonvulsants"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Esketamine_nasal_spray -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Esketamine_nasal_spray">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Injection"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Experimental_Drug_X_Rejected -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Experimental_Drug_X_Rejected">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#rejected"/>
+        <www:rejectionReason>Safety concerns in Phase III trials</www:rejectionReason>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Fatigue -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Fatigue">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#SideEffect"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Fentanyl -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Fentanyl">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Analgesics"/>
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Controlled_Substance"/>
+        <www:has_Legal_Classification rdf:resource="http://www.pharmaceutical.org#Fentanyl_CS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Fentanyl_CS -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Fentanyl_CS">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Controlled_Substance"/>
+        <www:has_Legal_Classification rdf:resource="http://www.pharmaceutical.org#Fentanyl"/>
+        <rdfs:comment>Schedule II controlled substance in most jurisdictions</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Fluoxetine -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Fluoxetine">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Tablet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Formoterol -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Formoterol">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Capsule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Gabapentin -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Gabapentin">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Analgesics"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Gastrointestinal_bleeding -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Gastrointestinal_bleeding">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#SideEffect"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Glucosamine -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Glucosamine">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Capsule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Heart_Failure -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Heart_Failure">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Disease_Condition"/>
+        <www:has_Treatment rdf:resource="http://www.pharmaceutical.org#Beta-Blockers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Histamine_H1_receptor_blockade -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Histamine_H1_receptor_blockade">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Mechanism_Of_Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Humulin -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Humulin">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#BrandName"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Hyperlipidemia -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Hyperlipidemia">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Disease_Condition"/>
+        <www:has_Treatment rdf:resource="http://www.pharmaceutical.org#Statins"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Hypersensitivity_to_active_ingredient -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Hypersensitivity_to_active_ingredient">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Contraindication"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Hypersensitivity_to_insulin -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Hypersensitivity_to_insulin">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Contraindication"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Hypertension -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Hypertension">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Disease_Condition"/>
+        <www:has_Treatment rdf:resource="http://www.pharmaceutical.org#ACE_Inhibitor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Hypoglycemia -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Hypoglycemia">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#SideEffect"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#IV_Diazepam -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#IV_Diazepam">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Injection"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#IV_Diuretics -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#IV_Diuretics">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Injection"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Ibuprofen -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Ibuprofen">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#HalfLife"/>
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Over-the-Counter"/>
+        <www:has_Active_Ingredient rdf:resource="http://www.pharmaceutical.org#Ibuprofen"/>
+        <www:has_Half_Life rdf:resource="http://www.pharmaceutical.org#Ibuprofen_HalfLife"/>
+        <www:has_Legal_Classification rdf:resource="http://www.pharmaceutical.org#Ibuprofen_OTC"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Ibuprofen_ -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Ibuprofen_">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#ActiveIngredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Ibuprofen_Capsule -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Ibuprofen_Capsule">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Capsule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Ibuprofen_HalfLife -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Ibuprofen_HalfLife">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#HalfLife"/>
+        <www:has_Half_Life rdf:resource="http://www.pharmaceutical.org#Ibuprofen"/>
+        <www:halfLifeUnit>hours</www:halfLifeUnit>
+        <www:halfLifeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</www:halfLifeValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Ibuprofen_OTC -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Ibuprofen_OTC">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Over-the-Counter"/>
+        <www:has_Legal_Classification rdf:resource="http://www.pharmaceutical.org#Ibuprofen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Ibuprofen_Standard_Dosage -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Ibuprofen_Standard_Dosage">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Recommended_Dosage"/>
+        <www:hasDosage rdf:resource="http://www.pharmaceutical.org#Ibuprofen_Standard_Dosage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Immunotherapy_shots -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Immunotherapy_shots">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Injection"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Increased_risk_of_infection -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Increased_risk_of_infection">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#SideEffect"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Inhibition_of_HMG-CoA_reductase -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Inhibition_of_HMG-CoA_reductase">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Mechanism_Of_Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Inhibition_of_cyclooxygenase_enzyme -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Inhibition_of_cyclooxygenase_enzyme">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Mechanism_Of_Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Insulin -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Insulin">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Storage_Requirement"/>
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Treatment"/>
+        <www:has_Brand_Name rdf:resource="http://www.pharmaceutical.org#Humulin"/>
+        <www:has_Contraindication rdf:resource="http://www.pharmaceutical.org#Hypersensitivity_to_insulin"/>
+        <www:has_Mechanism_Of_Action rdf:resource="http://www.pharmaceutical.org#Insulin_receptor_agonist"/>
+        <www:has_Side_Effect rdf:resource="http://www.pharmaceutical.org#Hypoglycemia"/>
+        <www:has_Storage_Requirement rdf:resource="http://www.pharmaceutical.org#Insulin_Storage"/>
+        <www:is_In_Essential_Medicines_List rdf:resource="http://www.pharmaceutical.org#Insulin_EML_Entry"/>
+        <www:is_In_Essential_Medicines_List rdf:resource="http://www.pharmaceutical.org#WHO_EML_2023"/>
+        <www:emlTherapeuticCategory>Antidiabetics</www:emlTherapeuticCategory>
+        <rdfs:comment>:Insulin a :Pharmaceutical_Drug ;
+  rdfs:label &quot;Insulin&quot; ;
+  :generic_Name &quot;Insulin&quot; ;
+  :brand_Name &quot;Humulin, Novolin, Lantus, Levemir, etc.&quot; ;
+  :active_Ingredient &quot;Insulin&quot; ;
+  :dosage_Form &quot;Injection&quot; ;
+  :mechanism_Of_Action &quot;Insulin receptor agonist; facilitates cellular glucose uptake&quot; ;
+  :contraindication &quot;Hypoglycemia, hypersensitivity to insulin&quot; ;
+  :side_Effect &quot;Hypoglycemia, weight gain, injection site reactions&quot; ;
+  :recommended_Dosage &quot;Individualized based on blood glucose monitoring&quot; ;
+  :half_Life &quot;Varies by insulin type (short-acting, long-acting)&quot; ;
+  :storage_Requirement &quot;Refrigerate between 2°C–8°C; do not freeze&quot; ;
+  :legal_Classification &quot;Prescription&quot; ;
+  :regulatory_Approval_Status &quot;approved&quot; ;
+  :&apos;EML therapeutic category&apos; &quot;Insulin and other medicines used for diabetes&quot; ;
+  :&apos;is in essential medicines list&apos; &quot;true&quot; .</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Insulin_EML_Entry -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Insulin_EML_Entry">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Essential_Medicines_List"/>
+        <www:is_In_Essential_Medicines_List rdf:resource="http://www.pharmaceutical.org#WHO_EML_2023"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Insulin_Injection -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Insulin_Injection">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Injection"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Insulin_Storage -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Insulin_Storage">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Storage_Requirement"/>
+        <www:has_Storage_Requirement rdf:resource="http://www.pharmaceutical.org#Insulin"/>
+        <www:storageCondition>Refrigerate at 2-8°C</www:storageCondition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Insulin_injections -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Insulin_injections">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Injection"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Insulin_receptor_agonist -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Insulin_receptor_agonist">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Mechanism_Of_Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Ketorolac -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Ketorolac">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Analgesics"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Lamictal -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Lamictal">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#BrandName"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Lamotrigine -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Lamotrigine">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#ActiveIngredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Lipitor -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Lipitor">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#BrandName"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Lisinopril -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Lisinopril">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#ActiveIngredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Lisinopril_Tablet -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Lisinopril_Tablet">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Tablet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Lopressor -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Lopressor">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#BrandName"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Loratadine -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Loratadine">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Tablet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Meropenem -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Meropenem">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Antibiotics"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Metoprolol -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Metoprolol">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#ActiveIngredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Modulation_of_neurotransmitter_activity -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Modulation_of_neurotransmitter_activity">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Mechanism_Of_Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Monoamine_oxidase_inhibitor_use -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Monoamine_oxidase_inhibitor_use">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Contraindication"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Montelukast -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Montelukast">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Tablet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Morphine -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Morphine">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Analgesics"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Morphine_CS -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Morphine_CS">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Controlled_Substance"/>
+        <www:has_Legal_Classification rdf:resource="http://www.pharmaceutical.org#Morphine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Muscle_pain -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Muscle_pain">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#SideEffect"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Narrow_angle_glaucoma -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Narrow_angle_glaucoma">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Contraindication"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Non-Steroidal_Anti-Inflammatory_Drug -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Non-Steroidal_Anti-Inflammatory_Drug">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Treatment"/>
+        <www:has_Active_Ingredient rdf:resource="http://www.pharmaceutical.org#Ibuprofen_"/>
+        <www:has_Brand_Name rdf:resource="http://www.pharmaceutical.org#Advil"/>
+        <www:has_Contraindication rdf:resource="http://www.pharmaceutical.org#Active_gastrointestinal_bleeding"/>
+        <www:has_Mechanism_Of_Action rdf:resource="http://www.pharmaceutical.org#Inhibition_of_cyclooxygenase_enzyme"/>
+        <www:has_Side_Effect rdf:resource="http://www.pharmaceutical.org#Gastrointestinal_bleeding"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Omalizumab -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Omalizumab">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Injection"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Omega-3_fatty_acid -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Omega-3_fatty_acid">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Capsule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Osteoarthritis -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Osteoarthritis">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Disease_Condition"/>
+        <www:has_Treatment rdf:resource="http://www.pharmaceutical.org#Non-Steroidal_Anti-Inflammatory_Drug"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#PCSK9_inhibitors -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#PCSK9_inhibitors">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Injection"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Paracetamol -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Paracetamol">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Analgesics"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Patient_JohnDoe -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Patient_JohnDoe">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Patient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Prednisone -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Prednisone">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#ActiveIngredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Prednisone_Capsule -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Prednisone_Capsule">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Capsule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Pregabalin -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Pregabalin">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Capsule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Pregabalin_ -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Pregabalin_">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Analgesics"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Pregnancy -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Pregnancy">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Contraindication"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Proventil -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Proventil">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#BrandName"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Rifampicin -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Rifampicin">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Antibiotics"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Rosuvastatin -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Rosuvastatin">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Tablet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Serotonin_reuptake_inhibition -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Serotonin_reuptake_inhibition">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Mechanism_Of_Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Sertraline -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Sertraline">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#ActiveIngredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Sertraline_Rx -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Sertraline_Rx">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Prescription"/>
+        <www:has_Legal_Classification rdf:resource="http://www.pharmaceutical.org#Sertraline"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Sertraline_Tablet -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Sertraline_Tablet">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Tablet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Severe_bradycardia -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Severe_bradycardia">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Contraindication"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Severe_heart_disease -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Severe_heart_disease">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Contraindication"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Statins -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Statins">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Treatment"/>
+        <www:has_Active_Ingredient rdf:resource="http://www.pharmaceutical.org#Atorvastatin"/>
+        <www:has_Active_Ingredient rdf:resource="http://www.pharmaceutical.org#Metoprolol"/>
+        <www:has_Brand_Name rdf:resource="http://www.pharmaceutical.org#Lipitor"/>
+        <www:has_Contraindication rdf:resource="http://www.pharmaceutical.org#Active_liver_disease"/>
+        <www:has_Mechanism_Of_Action rdf:resource="http://www.pharmaceutical.org#Inhibition_of_HMG-CoA_reductase"/>
+        <www:has_Side_Effect rdf:resource="http://www.pharmaceutical.org#Muscle_pain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Systemic_fungal_infections -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Systemic_fungal_infections">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Contraindication"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Tablet -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Tablet">
+        <www:has_Dosage_Form rdf:resource="http://www.pharmaceutical.org#Tablet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Tiotropium -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Tiotropium">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Capsule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Tramadol -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Tramadol">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Analgesics"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Tremors -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Tremors">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#SideEffect"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#WHO_EML_2023 -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#WHO_EML_2023">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Essential_Medicines_List"/>
+        <www:includes_Drug rdf:resource="http://www.pharmaceutical.org#Amoxicillin"/>
+        <www:includes_Drug rdf:resource="http://www.pharmaceutical.org#Insulin"/>
+        <www:authority rdf:resource="http://www.who.int"/>
+        <www:publicationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-07-24</www:publicationDate>
+        <www:version>23.1</www:version>
+        <rdfs:comment>The 23rd edition of the WHO Model List of Essential Medicines published in 2023</rdfs:comment>
+        <rdfs:label>WHO Essential Medicines List 2023</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Weight_gain -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Weight_gain">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#SideEffect"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Zestril -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Zestril">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#BrandName"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Zoloft -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Zoloft">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#BrandName"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Zyrtec -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Zyrtec">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#BrandName"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#_Albuterol -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#_Albuterol"/>
+    
+
+
+    <!-- http://www.pharmaceutical.org#_Amoxicillin -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#_Amoxicillin"/>
+    
+
+
+    <!-- http://www.pharmaceutical.org#_Azithromycin -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#_Azithromycin"/>
+    
+
+
+    <!-- http://www.pharmaceutical.org#_Benralizumab -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#_Benralizumab"/>
+    
+
+
+    <!-- http://www.pharmaceutical.org#approved -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#approved"/>
+    
+
+
+    <!-- http://www.pharmaceutical.org#insulin_analogs -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#insulin_analogs">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#ActiveIngredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#panadol -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#panadol">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Analgesics"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Amoxicillin_+_Clavulanic_Acid -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Amoxicillin_+_Clavulanic_Acid">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Antibiotics"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pharmaceutical.org#Chronic_Obstructive_Pulmonary_Disease_(COPD) -->
+
+    <owl:NamedIndividual rdf:about="http://www.pharmaceutical.org#Chronic_Obstructive_Pulmonary_Disease_(COPD)">
+        <rdf:type rdf:resource="http://www.pharmaceutical.org#Disease_Condition"/>
+        <www:has_Treatment rdf:resource="http://www.pharmaceutical.org#Corticosteroids"/>
+        <www:contraindication>Beta-blockers may worsen symptoms in some cases</www:contraindication>
+        <www:recommended_Dosage>Varies depending on severity and prescribed medications</www:recommended_Dosage>
+        <www:side_Effect>Difficulty breathing, fatigue, frequent respiratory infections</www:side_Effect>
+    </owl:NamedIndividual>
+
+    <owl:ObjectProperty rdf:about="#isClassificationOf"/>
+<owl:ObjectProperty rdf:about="#has_Brand_Name"/>
+<owl:ObjectProperty rdf:about="#treats"/>
+
+<owl:NamedIndividual rdf:about="#Amoxicillin_EML_Entry">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <isClassificationOf rdf:resource="#Amoxicillin"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Amoxicillin">
+  <rdf:type rdf:resource="#Controlled_Substance"/>
+  <has_Brand_Name rdf:resource="#Advil"/>
+  <treats rdf:resource="#Bacterial_Infection"/>
+</owl:NamedIndividual>
+
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
