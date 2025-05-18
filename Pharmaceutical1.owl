@@ -1,0 +1,1281 @@
+Prefix(:=<http://www.pharmaceutical.org>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(schema:=<https://schema.org/>)
+
+
+Ontology(<http://www.pharmaceutical.org>
+
+Declaration(Class(<http://example.org/Disease_Condition>))
+Declaration(Class(<http://schema.org/Organization>))
+Declaration(Class(<http://www.pharmaceutical.org#ActiveIngredient>))
+Declaration(Class(<http://www.pharmaceutical.org#Analgesics>))
+Declaration(Class(<http://www.pharmaceutical.org#Antibiotics>))
+Declaration(Class(<http://www.pharmaceutical.org#Antivirals>))
+Declaration(Class(<http://www.pharmaceutical.org#BrandName>))
+Declaration(Class(<http://www.pharmaceutical.org#Capsule>))
+Declaration(Class(<http://www.pharmaceutical.org#Contraindication>))
+Declaration(Class(<http://www.pharmaceutical.org#Controlled_Substance>))
+Declaration(Class(<http://www.pharmaceutical.org#Disease_And_Treatment>))
+Declaration(Class(<http://www.pharmaceutical.org#Disease_Condition>))
+Declaration(Class(<http://www.pharmaceutical.org#DosageForm>))
+Declaration(Class(<http://www.pharmaceutical.org#DrugCategory>))
+Declaration(Class(<http://www.pharmaceutical.org#Drug_Interaction>))
+Declaration(Class(<http://www.pharmaceutical.org#Essential_Medicines_List>))
+Declaration(Class(<http://www.pharmaceutical.org#HalfLife>))
+Declaration(Class(<http://www.pharmaceutical.org#Injection>))
+Declaration(Class(<http://www.pharmaceutical.org#LegalClassification>))
+Declaration(Class(<http://www.pharmaceutical.org#Mechanism_Of_Action>))
+Declaration(Class(<http://www.pharmaceutical.org#Over-the-Counter>))
+Declaration(Class(<http://www.pharmaceutical.org#Pharmaceutical_Drug>))
+Declaration(Class(<http://www.pharmaceutical.org#Prescription>))
+Declaration(Class(<http://www.pharmaceutical.org#Recommended_Dosage>))
+Declaration(Class(<http://www.pharmaceutical.org#Regulatory>))
+Declaration(Class(<http://www.pharmaceutical.org#Regulatory_Approval_Status>))
+Declaration(Class(<http://www.pharmaceutical.org#SideEffect>))
+Declaration(Class(<http://www.pharmaceutical.org#Storage_Requirement>))
+Declaration(Class(<http://www.pharmaceutical.org#Tablet>))
+Declaration(Class(<http://www.pharmaceutical.org#Treatment>))
+Declaration(Class(<http://www.pharmaceutical.org#Usage_And_Administration>))
+Declaration(Class(<http://www.pharmaceutical.org#approved>))
+Declaration(Class(<http://www.pharmaceutical.org#pending>))
+Declaration(Class(<http://www.pharmaceutical.org#rejected>))
+Declaration(ObjectProperty(<http://www.pharmaceutical.org#has_Active_Ingredient>))
+Declaration(ObjectProperty(<http://www.pharmaceutical.org#has_Brand_Name>))
+Declaration(ObjectProperty(<http://www.pharmaceutical.org#has_Contraindication>))
+Declaration(ObjectProperty(<http://www.pharmaceutical.org#has_Dosage_Form>))
+Declaration(ObjectProperty(<http://www.pharmaceutical.org#has_Generic_Name>))
+Declaration(ObjectProperty(<http://www.pharmaceutical.org#has_Half_Life>))
+Declaration(ObjectProperty(<http://www.pharmaceutical.org#has_Legal_Classification>))
+Declaration(ObjectProperty(<http://www.pharmaceutical.org#has_Mechanism_Of_Action>))
+Declaration(ObjectProperty(<http://www.pharmaceutical.org#has_Recommended_Dosage>))
+Declaration(ObjectProperty(<http://www.pharmaceutical.org#has_Regulatory_Approval_Status>))
+Declaration(ObjectProperty(<http://www.pharmaceutical.org#has_Side_Effect>))
+Declaration(ObjectProperty(<http://www.pharmaceutical.org#has_Storage_Requirement>))
+Declaration(ObjectProperty(<http://www.pharmaceutical.org#has_Treatment>))
+Declaration(ObjectProperty(<http://www.pharmaceutical.org#includes_Drug>))
+Declaration(ObjectProperty(<http://www.pharmaceutical.org#interacts_With>))
+Declaration(ObjectProperty(<http://www.pharmaceutical.org#isClassificationOf>))
+Declaration(ObjectProperty(<http://www.pharmaceutical.org#is_In_Essential_Medicines_List>))
+Declaration(ObjectProperty(<http://www.pharmaceutical.org#treats_Condition>))
+Declaration(DataProperty(<http://www.pharmaceutical.org#active_Ingredient>))
+Declaration(DataProperty(<http://www.pharmaceutical.org#brand_Name>))
+Declaration(DataProperty(<http://www.pharmaceutical.org#contraindication>))
+Declaration(DataProperty(<http://www.pharmaceutical.org#dosage_Form>))
+Declaration(DataProperty(<http://www.pharmaceutical.org#emlTherapeuticCategory>))
+Declaration(DataProperty(<http://www.pharmaceutical.org#generic_Name>))
+Declaration(DataProperty(<http://www.pharmaceutical.org#half_Life>))
+Declaration(DataProperty(<http://www.pharmaceutical.org#legal_Classification>))
+Declaration(DataProperty(<http://www.pharmaceutical.org#mechanism_Of_Action>))
+Declaration(DataProperty(<http://www.pharmaceutical.org#recommended_Dosage>))
+Declaration(DataProperty(<http://www.pharmaceutical.org#regulatory_Approval_Status>))
+Declaration(DataProperty(<http://www.pharmaceutical.org#side_Effect>))
+Declaration(DataProperty(<http://www.pharmaceutical.org#storage_Requirement>))
+Declaration(NamedIndividual(<http://example.org/Chronic_Obstructive_Pulmonary_Disease_(COPD)>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#ACE_Inhibitor>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Active_gastrointestinal_bleeding>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Active_liver_disease>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Advil>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Albuterol>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Albuterol_Inhalation_Solution>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Allergic_Rhinitis>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Amoxicillin>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Amoxicillin_Approved>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Amoxicillin_EML_Entry>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Amoxicillin_Standard_Dosage>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Amoxicillin_Storage>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Analgesics>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Angiotensin-converting_enzyme_inhibition>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Anti-inflammatory_effects_via_glucocorticoid_receptor_activation>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Antibiotics>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Anticonvulsants>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Antidepressant>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Antihistamine>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Aspirin>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Asthma>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Atorvastatin>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Atorvastatin_>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Atorvastatin_Approved>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Atorvastatin_HalfLife>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Atorvastatin_Rx>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Atorvastatin_Standard_Dosage>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Azithromycin>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Benralizumab>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Benralizumab_Pending>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Beta-2_adrenergic_receptor_agonism>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Beta-Blockers>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Beta-blockers>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Blockade_of_beta-adrenergic_receptors>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Bronchodilator>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Bronchodilators>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Budesonide>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Carbamazepine>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Ceftriaxone>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Celecoxib>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Cephalexin>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Cetirizine>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Cetirizine_OTC>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Ciprofloxacin>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Clavulanic_Acid>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Corticosteroids>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Cough>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Deltasone>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Depression>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Diabetes>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Diclofenac>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Diclofenac_>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Diclofenac_Sodium>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Diuretics>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Dizziness>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Doxycycline>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Drowsiness>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Duloxetine>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Epilepsy>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Esketamine_nasal_spray>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Experimental_Drug_X_Rejected>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Fatigue>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Fentanyl>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Fentanyl_CS>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Fluoxetine>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Formoterol>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Gabapentin>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Gastrointestinal_bleeding>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Glucosamine>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Heart_Failure>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Histamine_H1_receptor_blockade>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Humulin>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Hyperlipidemia>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Hypersensitivity_to_active_ingredient>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Hypersensitivity_to_insulin>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Hypertension>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Hypoglycemia>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#IV_Diazepam>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#IV_Diuretics>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Ibuprofen>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Ibuprofen_>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Ibuprofen_Capsule>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Ibuprofen_HalfLife>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Ibuprofen_OTC>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Immunotherapy_shots>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Increased_risk_of_infection>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Inhibition_of_HMG-CoA_reductase>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Inhibition_of_cyclooxygenase_enzyme>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Insulin>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Insulin_EML_Entry>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Insulin_Injection>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Insulin_Storage>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Insulin_injections>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Insulin_receptor_agonist>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Ketorolac>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Lamictal>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Lamotrigine>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Lipitor>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Lisinopril>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Lisinopril_Tablet>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Lopressor>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Loratadine>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Meropenem>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Metoprolol>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Modulation_of_neurotransmitter_activity>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Monoamine_oxidase_inhibitor_use>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Montelukast>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Morphine>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Morphine_CS>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Muscle_pain>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Narrow_angle_glaucoma>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Non-Steroidal_Anti-Inflammatory_Drug>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Omalizumab>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Omega-3_fatty_acid>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Osteoarthritis>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#PCSK9_inhibitors>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Paracetamol>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Prednisone>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Prednisone_Capsule>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Pregabalin>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Pregabalin_>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Pregnancy>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Proventil>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Rifampicin>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Rosuvastatin>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Serotonin_reuptake_inhibition>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Sertraline>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Sertraline_Rx>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Sertraline_Tablet>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Severe_bradycardia>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Severe_heart_disease>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Statins>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Systemic_fungal_infections>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Tablet>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Tiotropium>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Tramadol>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Tremors>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#WHO_EML_2023>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Weight_gain>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Zestril>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Zoloft>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Zyrtec>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#_Albuterol>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#_Amoxicillin>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#_Azithromycin>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#_Benralizumab>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#approved>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#insulin_analogs>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#panadol>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Amoxicillin_+_Clavulanic_Acid>))
+Declaration(NamedIndividual(<http://www.pharmaceutical.org#Chronic_Obstructive_Pulmonary_Disease_(COPD)>))
+Declaration(AnnotationProperty(<http://www.pharmaceutical.org#approvalDate>))
+Declaration(AnnotationProperty(<http://www.pharmaceutical.org#authority>))
+Declaration(AnnotationProperty(<http://www.pharmaceutical.org#dosageAmount>))
+Declaration(AnnotationProperty(<http://www.pharmaceutical.org#frequency>))
+Declaration(AnnotationProperty(<http://www.pharmaceutical.org#halfLifeUnit>))
+Declaration(AnnotationProperty(<http://www.pharmaceutical.org#halfLifeValue>))
+Declaration(AnnotationProperty(<http://www.pharmaceutical.org#publicationDate>))
+Declaration(AnnotationProperty(<http://www.pharmaceutical.org#rejectionReason>))
+Declaration(AnnotationProperty(<http://www.pharmaceutical.org#storageCondition>))
+Declaration(AnnotationProperty(<http://www.pharmaceutical.org#version>))
+Declaration(Datatype(xsd:date))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://www.pharmaceutical.org#has_Active_Ingredient> (<http://www.pharmaceutical.org#has_Active_Ingredient>)
+
+AnnotationAssertion(rdfs:comment <http://www.pharmaceutical.org#has_Active_Ingredient> "Links a pharmaceutical drug to its active ingredient, which is the substance responsible for its therapeutic effect.")
+ObjectPropertyDomain(<http://www.pharmaceutical.org#has_Active_Ingredient> <http://www.pharmaceutical.org#Pharmaceutical_Drug>)
+ObjectPropertyRange(<http://www.pharmaceutical.org#has_Active_Ingredient> <http://www.pharmaceutical.org#ActiveIngredient>)
+
+# Object Property: <http://www.pharmaceutical.org#has_Brand_Name> (<http://www.pharmaceutical.org#has_Brand_Name>)
+
+AnnotationAssertion(rdfs:comment <http://www.pharmaceutical.org#has_Brand_Name> "Indicates the commercial name under which a pharmaceutical drug is marketed.")
+ObjectPropertyDomain(<http://www.pharmaceutical.org#has_Brand_Name> <http://www.pharmaceutical.org#Pharmaceutical_Drug>)
+ObjectPropertyRange(<http://www.pharmaceutical.org#has_Brand_Name> <http://www.pharmaceutical.org#BrandName>)
+
+# Object Property: <http://www.pharmaceutical.org#has_Contraindication> (<http://www.pharmaceutical.org#has_Contraindication>)
+
+AnnotationAssertion(rdfs:comment <http://www.pharmaceutical.org#has_Contraindication> "Identifies specific conditions or factors that serve as reasons to withhold a certain medical treatment due to the harm it could cause the patient.")
+ObjectPropertyDomain(<http://www.pharmaceutical.org#has_Contraindication> <http://www.pharmaceutical.org#Pharmaceutical_Drug>)
+ObjectPropertyRange(<http://www.pharmaceutical.org#has_Contraindication> <http://www.pharmaceutical.org#Contraindication>)
+
+# Object Property: <http://www.pharmaceutical.org#has_Dosage_Form> (<http://www.pharmaceutical.org#has_Dosage_Form>)
+
+AnnotationAssertion(rdfs:comment <http://www.pharmaceutical.org#has_Dosage_Form> "Specifies the form in which a pharmaceutical drug is administered, such as tablet, capsule, or injection")
+ObjectPropertyDomain(<http://www.pharmaceutical.org#has_Dosage_Form> <http://www.pharmaceutical.org#Pharmaceutical_Drug>)
+ObjectPropertyRange(<http://www.pharmaceutical.org#has_Dosage_Form> <http://www.pharmaceutical.org#DosageForm>)
+
+# Object Property: <http://www.pharmaceutical.org#has_Generic_Name> (<http://www.pharmaceutical.org#has_Generic_Name>)
+
+AnnotationAssertion(rdfs:comment <http://www.pharmaceutical.org#has_Generic_Name> "Represents the official non-proprietary name of a pharmaceutical drug, as recognized by health authorities.")
+ObjectPropertyDomain(<http://www.pharmaceutical.org#has_Generic_Name> <http://www.pharmaceutical.org#Pharmaceutical_Drug>)
+
+# Object Property: <http://www.pharmaceutical.org#has_Half_Life> (<http://www.pharmaceutical.org#has_Half_Life>)
+
+AnnotationAssertion(rdfs:comment <http://www.pharmaceutical.org#has_Half_Life> "Represents the time it takes for the concentration of the drug in the bloodstream to reduce to half its initial value."@en)
+ObjectPropertyDomain(<http://www.pharmaceutical.org#has_Half_Life> <http://www.pharmaceutical.org#Pharmaceutical_Drug>)
+ObjectPropertyRange(<http://www.pharmaceutical.org#has_Half_Life> <http://www.pharmaceutical.org#HalfLife>)
+
+# Object Property: <http://www.pharmaceutical.org#has_Legal_Classification> (<http://www.pharmaceutical.org#has_Legal_Classification>)
+
+AnnotationAssertion(rdfs:comment <http://www.pharmaceutical.org#has_Legal_Classification> "Specifies the legal classification of the pharmaceutical drug, which may determine its availability and prescription requirements."@en)
+InverseObjectProperties(<http://www.pharmaceutical.org#has_Legal_Classification> <http://www.pharmaceutical.org#isClassificationOf>)
+ObjectPropertyDomain(<http://www.pharmaceutical.org#has_Legal_Classification> <http://www.pharmaceutical.org#Pharmaceutical_Drug>)
+ObjectPropertyRange(<http://www.pharmaceutical.org#has_Legal_Classification> <http://www.pharmaceutical.org#LegalClassification>)
+
+# Object Property: <http://www.pharmaceutical.org#has_Mechanism_Of_Action> (<http://www.pharmaceutical.org#has_Mechanism_Of_Action>)
+
+AnnotationAssertion(rdfs:comment <http://www.pharmaceutical.org#has_Mechanism_Of_Action> "Describes the biochemical process through which a pharmaceutical drug exerts its therapeutic effect.")
+ObjectPropertyDomain(<http://www.pharmaceutical.org#has_Mechanism_Of_Action> <http://www.pharmaceutical.org#Pharmaceutical_Drug>)
+ObjectPropertyRange(<http://www.pharmaceutical.org#has_Mechanism_Of_Action> <http://www.pharmaceutical.org#Mechanism_Of_Action>)
+
+# Object Property: <http://www.pharmaceutical.org#has_Recommended_Dosage> (<http://www.pharmaceutical.org#has_Recommended_Dosage>)
+
+AnnotationAssertion(rdfs:comment <http://www.pharmaceutical.org#has_Recommended_Dosage> "Specifies the dosage of the pharmaceutical drug that is recommended for effective treatment, including frequency and amount.")
+ObjectPropertyDomain(<http://www.pharmaceutical.org#has_Recommended_Dosage> <http://www.pharmaceutical.org#Pharmaceutical_Drug>)
+ObjectPropertyRange(<http://www.pharmaceutical.org#has_Recommended_Dosage> <http://www.pharmaceutical.org#Recommended_Dosage>)
+
+# Object Property: <http://www.pharmaceutical.org#has_Regulatory_Approval_Status> (<http://www.pharmaceutical.org#has_Regulatory_Approval_Status>)
+
+AnnotationAssertion(rdfs:comment <http://www.pharmaceutical.org#has_Regulatory_Approval_Status> "Indicates the current status of regulatory approval for the pharmaceutical drug, such as approved, pending, or rejected."@en)
+ObjectPropertyDomain(<http://www.pharmaceutical.org#has_Regulatory_Approval_Status> <http://www.pharmaceutical.org#Pharmaceutical_Drug>)
+ObjectPropertyRange(<http://www.pharmaceutical.org#has_Regulatory_Approval_Status> <http://www.pharmaceutical.org#Regulatory_Approval_Status>)
+
+# Object Property: <http://www.pharmaceutical.org#has_Side_Effect> (<http://www.pharmaceutical.org#has_Side_Effect>)
+
+AnnotationAssertion(rdfs:comment <http://www.pharmaceutical.org#has_Side_Effect> "Describes any unintended or adverse effects that may occur as a result of taking the pharmaceutical drug.")
+ObjectPropertyDomain(<http://www.pharmaceutical.org#has_Side_Effect> <http://www.pharmaceutical.org#Pharmaceutical_Drug>)
+ObjectPropertyRange(<http://www.pharmaceutical.org#has_Side_Effect> <http://www.pharmaceutical.org#SideEffect>)
+
+# Object Property: <http://www.pharmaceutical.org#has_Storage_Requirement> (<http://www.pharmaceutical.org#has_Storage_Requirement>)
+
+AnnotationAssertion(rdfs:comment <http://www.pharmaceutical.org#has_Storage_Requirement> "Indicates the conditions under which a pharmaceutical drug should be stored to maintain its efficacy and safety.")
+ObjectPropertyDomain(<http://www.pharmaceutical.org#has_Storage_Requirement> <http://www.pharmaceutical.org#Pharmaceutical_Drug>)
+ObjectPropertyRange(<http://www.pharmaceutical.org#has_Storage_Requirement> <http://www.pharmaceutical.org#Storage_Requirement>)
+
+# Object Property: <http://www.pharmaceutical.org#has_Treatment> (<http://www.pharmaceutical.org#has_Treatment>)
+
+SubObjectPropertyOf(<http://www.pharmaceutical.org#has_Treatment> owl:topObjectProperty)
+ObjectPropertyDomain(<http://www.pharmaceutical.org#has_Treatment> <http://www.pharmaceutical.org#Disease_Condition>)
+ObjectPropertyRange(<http://www.pharmaceutical.org#has_Treatment> <http://www.pharmaceutical.org#Treatment>)
+
+# Object Property: <http://www.pharmaceutical.org#includes_Drug> (<http://www.pharmaceutical.org#includes_Drug>)
+
+InverseObjectProperties(<http://www.pharmaceutical.org#includes_Drug> <http://www.pharmaceutical.org#is_In_Essential_Medicines_List>)
+ObjectPropertyDomain(<http://www.pharmaceutical.org#includes_Drug> <http://www.pharmaceutical.org#Essential_Medicines_List>)
+ObjectPropertyRange(<http://www.pharmaceutical.org#includes_Drug> <http://www.pharmaceutical.org#Pharmaceutical_Drug>)
+
+# Object Property: <http://www.pharmaceutical.org#interacts_With> (<http://www.pharmaceutical.org#interacts_With>)
+
+ObjectPropertyDomain(<http://www.pharmaceutical.org#interacts_With> <http://www.pharmaceutical.org#Pharmaceutical_Drug>)
+ObjectPropertyRange(<http://www.pharmaceutical.org#interacts_With> <http://www.pharmaceutical.org#Pharmaceutical_Drug>)
+
+# Object Property: <http://www.pharmaceutical.org#isClassificationOf> (<http://www.pharmaceutical.org#isClassificationOf>)
+
+ObjectPropertyDomain(<http://www.pharmaceutical.org#isClassificationOf> <http://www.pharmaceutical.org#LegalClassification>)
+ObjectPropertyRange(<http://www.pharmaceutical.org#isClassificationOf> <http://www.pharmaceutical.org#Pharmaceutical_Drug>)
+
+# Object Property: <http://www.pharmaceutical.org#is_In_Essential_Medicines_List> (<http://www.pharmaceutical.org#is_In_Essential_Medicines_List>)
+
+ObjectPropertyDomain(<http://www.pharmaceutical.org#is_In_Essential_Medicines_List> <http://www.pharmaceutical.org#Pharmaceutical_Drug>)
+ObjectPropertyRange(<http://www.pharmaceutical.org#is_In_Essential_Medicines_List> <http://www.pharmaceutical.org#Essential_Medicines_List>)
+
+# Object Property: <http://www.pharmaceutical.org#treats_Condition> (<http://www.pharmaceutical.org#treats_Condition>)
+
+ObjectPropertyDomain(<http://www.pharmaceutical.org#treats_Condition> <http://www.pharmaceutical.org#Pharmaceutical_Drug>)
+ObjectPropertyRange(<http://www.pharmaceutical.org#treats_Condition> <http://www.pharmaceutical.org#Disease_Condition>)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: <http://www.pharmaceutical.org#active_Ingredient> (<http://www.pharmaceutical.org#active_Ingredient>)
+
+AnnotationAssertion(rdfs:comment <http://www.pharmaceutical.org#active_Ingredient> "The active substance in a pharmaceutical drug that is responsible for its therapeutic effect."@en)
+DataPropertyDomain(<http://www.pharmaceutical.org#active_Ingredient> <http://www.pharmaceutical.org#Pharmaceutical_Drug>)
+DataPropertyRange(<http://www.pharmaceutical.org#active_Ingredient> xsd:string)
+
+# Data Property: <http://www.pharmaceutical.org#brand_Name> (<http://www.pharmaceutical.org#brand_Name>)
+
+AnnotationAssertion(rdfs:comment <http://www.pharmaceutical.org#brand_Name> "The proprietary name under which a pharmaceutical drug is marketed, often used for branding purposes."@en)
+DataPropertyDomain(<http://www.pharmaceutical.org#brand_Name> <http://www.pharmaceutical.org#Pharmaceutical_Drug>)
+DataPropertyRange(<http://www.pharmaceutical.org#brand_Name> xsd:string)
+
+# Data Property: <http://www.pharmaceutical.org#contraindication> (<http://www.pharmaceutical.org#contraindication>)
+
+AnnotationAssertion(rdfs:comment <http://www.pharmaceutical.org#contraindication> "Specific conditions or factors that indicate the drug should not be used due to potential harm to the patient."@en)
+DataPropertyDomain(<http://www.pharmaceutical.org#contraindication> <http://www.pharmaceutical.org#Pharmaceutical_Drug>)
+DataPropertyRange(<http://www.pharmaceutical.org#contraindication> xsd:string)
+
+# Data Property: <http://www.pharmaceutical.org#dosage_Form> (<http://www.pharmaceutical.org#dosage_Form>)
+
+AnnotationAssertion(rdfs:comment <http://www.pharmaceutical.org#dosage_Form> "The physical form in which a pharmaceutical drug is produced and administered, such as tablet, capsule, or injection."@en)
+DataPropertyDomain(<http://www.pharmaceutical.org#dosage_Form> <http://www.pharmaceutical.org#Pharmaceutical_Drug>)
+DataPropertyRange(<http://www.pharmaceutical.org#dosage_Form> xsd:string)
+
+# Data Property: <http://www.pharmaceutical.org#emlTherapeuticCategory> (EML therapeutic category)
+
+AnnotationAssertion(rdfs:label <http://www.pharmaceutical.org#emlTherapeuticCategory> "EML therapeutic category")
+DataPropertyDomain(<http://www.pharmaceutical.org#emlTherapeuticCategory> <http://www.pharmaceutical.org#Pharmaceutical_Drug>)
+DataPropertyRange(<http://www.pharmaceutical.org#emlTherapeuticCategory> xsd:string)
+
+# Data Property: <http://www.pharmaceutical.org#generic_Name> (<http://www.pharmaceutical.org#generic_Name>)
+
+AnnotationAssertion(rdfs:comment <http://www.pharmaceutical.org#generic_Name> "The official non-proprietary name of a pharmaceutical drug, recognized by health authorities and used universally."@en)
+DataPropertyDomain(<http://www.pharmaceutical.org#generic_Name> <http://www.pharmaceutical.org#Pharmaceutical_Drug>)
+DataPropertyRange(<http://www.pharmaceutical.org#generic_Name> xsd:string)
+
+# Data Property: <http://www.pharmaceutical.org#half_Life> (<http://www.pharmaceutical.org#half_Life>)
+
+AnnotationAssertion(rdfs:comment <http://www.pharmaceutical.org#half_Life> "The time required for the concentration of the drug in the bloodstream to reduce to half its initial value."@en)
+DataPropertyDomain(<http://www.pharmaceutical.org#half_Life> <http://www.pharmaceutical.org#Pharmaceutical_Drug>)
+DataPropertyRange(<http://www.pharmaceutical.org#half_Life> xsd:float)
+
+# Data Property: <http://www.pharmaceutical.org#legal_Classification> (<http://www.pharmaceutical.org#legal_Classification>)
+
+AnnotationAssertion(rdfs:comment <http://www.pharmaceutical.org#legal_Classification> "The legal classification of the pharmaceutical drug, which may determine its availability and prescription requirements."@en)
+DataPropertyDomain(<http://www.pharmaceutical.org#legal_Classification> <http://www.pharmaceutical.org#Pharmaceutical_Drug>)
+DataPropertyRange(<http://www.pharmaceutical.org#legal_Classification> xsd:string)
+
+# Data Property: <http://www.pharmaceutical.org#mechanism_Of_Action> (<http://www.pharmaceutical.org#mechanism_Of_Action>)
+
+AnnotationAssertion(rdfs:comment <http://www.pharmaceutical.org#mechanism_Of_Action> "The biochemical process through which a pharmaceutical drug exerts its therapeutic effect."@en)
+DataPropertyDomain(<http://www.pharmaceutical.org#mechanism_Of_Action> <http://www.pharmaceutical.org#Pharmaceutical_Drug>)
+DataPropertyRange(<http://www.pharmaceutical.org#mechanism_Of_Action> xsd:string)
+
+# Data Property: <http://www.pharmaceutical.org#recommended_Dosage> (<http://www.pharmaceutical.org#recommended_Dosage>)
+
+AnnotationAssertion(rdfs:comment <http://www.pharmaceutical.org#recommended_Dosage> "The dosage of the pharmaceutical drug that is recommended for effective treatment, including frequency and amount."@en)
+DataPropertyDomain(<http://www.pharmaceutical.org#recommended_Dosage> <http://www.pharmaceutical.org#Pharmaceutical_Drug>)
+DataPropertyRange(<http://www.pharmaceutical.org#recommended_Dosage> xsd:string)
+
+# Data Property: <http://www.pharmaceutical.org#regulatory_Approval_Status> (<http://www.pharmaceutical.org#regulatory_Approval_Status>)
+
+AnnotationAssertion(rdfs:comment <http://www.pharmaceutical.org#regulatory_Approval_Status> "The current status of regulatory approval for the pharmaceutical drug, such as approved, pending, or rejected."@en)
+DataPropertyDomain(<http://www.pharmaceutical.org#regulatory_Approval_Status> <http://www.pharmaceutical.org#Pharmaceutical_Drug>)
+DataPropertyRange(<http://www.pharmaceutical.org#regulatory_Approval_Status> xsd:string)
+
+# Data Property: <http://www.pharmaceutical.org#side_Effect> (<http://www.pharmaceutical.org#side_Effect>)
+
+AnnotationAssertion(rdfs:comment <http://www.pharmaceutical.org#side_Effect> "Any unintended or adverse effects that may occur as a result of taking the pharmaceutical drug."@en)
+DataPropertyDomain(<http://www.pharmaceutical.org#side_Effect> <http://www.pharmaceutical.org#Pharmaceutical_Drug>)
+DataPropertyRange(<http://www.pharmaceutical.org#side_Effect> xsd:string)
+
+# Data Property: <http://www.pharmaceutical.org#storage_Requirement> (<http://www.pharmaceutical.org#storage_Requirement>)
+
+AnnotationAssertion(rdfs:comment <http://www.pharmaceutical.org#storage_Requirement> "Conditions under which a pharmaceutical drug should be stored to maintain its efficacy and safety."@en)
+DataPropertyDomain(<http://www.pharmaceutical.org#storage_Requirement> <http://www.pharmaceutical.org#Pharmaceutical_Drug>)
+DataPropertyRange(<http://www.pharmaceutical.org#storage_Requirement> xsd:string)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://www.pharmaceutical.org#ActiveIngredient> (<http://www.pharmaceutical.org#ActiveIngredient>)
+
+SubClassOf(<http://www.pharmaceutical.org#ActiveIngredient> <http://www.pharmaceutical.org#Pharmaceutical_Drug>)
+
+# Class: <http://www.pharmaceutical.org#Analgesics> (<http://www.pharmaceutical.org#Analgesics>)
+
+SubClassOf(<http://www.pharmaceutical.org#Analgesics> <http://www.pharmaceutical.org#DrugCategory>)
+
+# Class: <http://www.pharmaceutical.org#Antibiotics> (<http://www.pharmaceutical.org#Antibiotics>)
+
+SubClassOf(<http://www.pharmaceutical.org#Antibiotics> <http://www.pharmaceutical.org#DrugCategory>)
+
+# Class: <http://www.pharmaceutical.org#Antivirals> (<http://www.pharmaceutical.org#Antivirals>)
+
+SubClassOf(<http://www.pharmaceutical.org#Antivirals> <http://www.pharmaceutical.org#DrugCategory>)
+
+# Class: <http://www.pharmaceutical.org#BrandName> (<http://www.pharmaceutical.org#BrandName>)
+
+SubClassOf(<http://www.pharmaceutical.org#BrandName> <http://www.pharmaceutical.org#Pharmaceutical_Drug>)
+
+# Class: <http://www.pharmaceutical.org#Capsule> (<http://www.pharmaceutical.org#Capsule>)
+
+SubClassOf(<http://www.pharmaceutical.org#Capsule> <http://www.pharmaceutical.org#DosageForm>)
+
+# Class: <http://www.pharmaceutical.org#Contraindication> (<http://www.pharmaceutical.org#Contraindication>)
+
+SubClassOf(<http://www.pharmaceutical.org#Contraindication> <http://www.pharmaceutical.org#Drug_Interaction>)
+
+# Class: <http://www.pharmaceutical.org#Controlled_Substance> (<http://www.pharmaceutical.org#Controlled_Substance>)
+
+SubClassOf(<http://www.pharmaceutical.org#Controlled_Substance> <http://www.pharmaceutical.org#LegalClassification>)
+
+# Class: <http://www.pharmaceutical.org#Disease_Condition> (<http://www.pharmaceutical.org#Disease_Condition>)
+
+SubClassOf(<http://www.pharmaceutical.org#Disease_Condition> <http://www.pharmaceutical.org#Disease_And_Treatment>)
+
+# Class: <http://www.pharmaceutical.org#DosageForm> (<http://www.pharmaceutical.org#DosageForm>)
+
+SubClassOf(<http://www.pharmaceutical.org#DosageForm> <http://www.pharmaceutical.org#Pharmaceutical_Drug>)
+
+# Class: <http://www.pharmaceutical.org#DrugCategory> (<http://www.pharmaceutical.org#DrugCategory>)
+
+SubClassOf(<http://www.pharmaceutical.org#DrugCategory> <http://www.pharmaceutical.org#Pharmaceutical_Drug>)
+
+# Class: <http://www.pharmaceutical.org#Essential_Medicines_List> (<http://www.pharmaceutical.org#Essential_Medicines_List>)
+
+SubClassOf(<http://www.pharmaceutical.org#Essential_Medicines_List> <http://www.pharmaceutical.org#Regulatory>)
+
+# Class: <http://www.pharmaceutical.org#HalfLife> (<http://www.pharmaceutical.org#HalfLife>)
+
+SubClassOf(<http://www.pharmaceutical.org#HalfLife> <http://www.pharmaceutical.org#Usage_And_Administration>)
+
+# Class: <http://www.pharmaceutical.org#Injection> (<http://www.pharmaceutical.org#Injection>)
+
+SubClassOf(<http://www.pharmaceutical.org#Injection> <http://www.pharmaceutical.org#DosageForm>)
+
+# Class: <http://www.pharmaceutical.org#LegalClassification> (<http://www.pharmaceutical.org#LegalClassification>)
+
+SubClassOf(<http://www.pharmaceutical.org#LegalClassification> <http://www.pharmaceutical.org#Regulatory>)
+
+# Class: <http://www.pharmaceutical.org#Mechanism_Of_Action> (<http://www.pharmaceutical.org#Mechanism_Of_Action>)
+
+SubClassOf(<http://www.pharmaceutical.org#Mechanism_Of_Action> <http://www.pharmaceutical.org#Drug_Interaction>)
+
+# Class: <http://www.pharmaceutical.org#Over-the-Counter> (<http://www.pharmaceutical.org#Over-the-Counter>)
+
+SubClassOf(<http://www.pharmaceutical.org#Over-the-Counter> <http://www.pharmaceutical.org#LegalClassification>)
+
+# Class: <http://www.pharmaceutical.org#Prescription> (<http://www.pharmaceutical.org#Prescription>)
+
+SubClassOf(<http://www.pharmaceutical.org#Prescription> <http://www.pharmaceutical.org#LegalClassification>)
+
+# Class: <http://www.pharmaceutical.org#Recommended_Dosage> (<http://www.pharmaceutical.org#Recommended_Dosage>)
+
+SubClassOf(<http://www.pharmaceutical.org#Recommended_Dosage> <http://www.pharmaceutical.org#Usage_And_Administration>)
+
+# Class: <http://www.pharmaceutical.org#Regulatory_Approval_Status> (<http://www.pharmaceutical.org#Regulatory_Approval_Status>)
+
+SubClassOf(<http://www.pharmaceutical.org#Regulatory_Approval_Status> <http://www.pharmaceutical.org#Regulatory>)
+
+# Class: <http://www.pharmaceutical.org#SideEffect> (<http://www.pharmaceutical.org#SideEffect>)
+
+SubClassOf(<http://www.pharmaceutical.org#SideEffect> <http://www.pharmaceutical.org#Drug_Interaction>)
+
+# Class: <http://www.pharmaceutical.org#Storage_Requirement> (<http://www.pharmaceutical.org#Storage_Requirement>)
+
+SubClassOf(<http://www.pharmaceutical.org#Storage_Requirement> <http://www.pharmaceutical.org#Usage_And_Administration>)
+
+# Class: <http://www.pharmaceutical.org#Tablet> (<http://www.pharmaceutical.org#Tablet>)
+
+SubClassOf(<http://www.pharmaceutical.org#Tablet> <http://www.pharmaceutical.org#DosageForm>)
+
+# Class: <http://www.pharmaceutical.org#Treatment> (<http://www.pharmaceutical.org#Treatment>)
+
+SubClassOf(<http://www.pharmaceutical.org#Treatment> <http://www.pharmaceutical.org#Disease_And_Treatment>)
+
+# Class: <http://www.pharmaceutical.org#approved> (<http://www.pharmaceutical.org#approved>)
+
+SubClassOf(<http://www.pharmaceutical.org#approved> <http://www.pharmaceutical.org#Regulatory_Approval_Status>)
+
+# Class: <http://www.pharmaceutical.org#pending> (<http://www.pharmaceutical.org#pending>)
+
+SubClassOf(<http://www.pharmaceutical.org#pending> <http://www.pharmaceutical.org#Regulatory_Approval_Status>)
+
+# Class: <http://www.pharmaceutical.org#rejected> (<http://www.pharmaceutical.org#rejected>)
+
+SubClassOf(<http://www.pharmaceutical.org#rejected> <http://www.pharmaceutical.org#Regulatory_Approval_Status>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://example.org/Chronic_Obstructive_Pulmonary_Disease_(COPD)> (Chronic Obstructive Pulmonary Disease (COPD))
+
+AnnotationAssertion(rdfs:comment <http://example.org/Chronic_Obstructive_Pulmonary_Disease_(COPD)> "
+    A chronic inflammatory lung disease that causes obstructed airflow from the lungs. Common symptoms include breathing difficulty, cough, mucus (sputum) production, and wheezing.
+  ")
+AnnotationAssertion(rdfs:label <http://example.org/Chronic_Obstructive_Pulmonary_Disease_(COPD)> "Chronic Obstructive Pulmonary Disease (COPD)")
+ClassAssertion(<http://example.org/Disease_Condition> <http://example.org/Chronic_Obstructive_Pulmonary_Disease_(COPD)>)
+DataPropertyAssertion(<http://www.pharmaceutical.org#contraindication> <http://example.org/Chronic_Obstructive_Pulmonary_Disease_(COPD)> "Beta-blockers may worsen symptoms in some cases")
+DataPropertyAssertion(<http://www.pharmaceutical.org#legal_Classification> <http://example.org/Chronic_Obstructive_Pulmonary_Disease_(COPD)> "N/A (applies to drugs)")
+DataPropertyAssertion(<http://www.pharmaceutical.org#recommended_Dosage> <http://example.org/Chronic_Obstructive_Pulmonary_Disease_(COPD)> "Varies depending on severity and prescribed medications")
+DataPropertyAssertion(<http://www.pharmaceutical.org#regulatory_Approval_Status> <http://example.org/Chronic_Obstructive_Pulmonary_Disease_(COPD)> "N/A (applies to drugs, not diseases)")
+DataPropertyAssertion(<http://www.pharmaceutical.org#side_Effect> <http://example.org/Chronic_Obstructive_Pulmonary_Disease_(COPD)> "Difficulty breathing, fatigue, frequent respiratory infections")
+DataPropertyAssertion(<http://www.pharmaceutical.org#storage_Requirement> <http://example.org/Chronic_Obstructive_Pulmonary_Disease_(COPD)> "N/A for disease; refer to prescribed medication storage")
+
+# Individual: <http://www.pharmaceutical.org#ACE_Inhibitor> (<http://www.pharmaceutical.org#ACE_Inhibitor>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Treatment> <http://www.pharmaceutical.org#ACE_Inhibitor>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Active_Ingredient> <http://www.pharmaceutical.org#ACE_Inhibitor> <http://www.pharmaceutical.org#Lisinopril>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Brand_Name> <http://www.pharmaceutical.org#ACE_Inhibitor> <http://www.pharmaceutical.org#Zestril>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Contraindication> <http://www.pharmaceutical.org#ACE_Inhibitor> <http://www.pharmaceutical.org#Pregnancy>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Mechanism_Of_Action> <http://www.pharmaceutical.org#ACE_Inhibitor> <http://www.pharmaceutical.org#Angiotensin-converting_enzyme_inhibition>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Side_Effect> <http://www.pharmaceutical.org#ACE_Inhibitor> <http://www.pharmaceutical.org#Cough>)
+
+# Individual: <http://www.pharmaceutical.org#Active_gastrointestinal_bleeding> (<http://www.pharmaceutical.org#Active_gastrointestinal_bleeding>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Contraindication> <http://www.pharmaceutical.org#Active_gastrointestinal_bleeding>)
+
+# Individual: <http://www.pharmaceutical.org#Active_liver_disease> (<http://www.pharmaceutical.org#Active_liver_disease>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Contraindication> <http://www.pharmaceutical.org#Active_liver_disease>)
+
+# Individual: <http://www.pharmaceutical.org#Advil> (<http://www.pharmaceutical.org#Advil>)
+
+ClassAssertion(<http://www.pharmaceutical.org#BrandName> <http://www.pharmaceutical.org#Advil>)
+
+# Individual: <http://www.pharmaceutical.org#Albuterol> (<http://www.pharmaceutical.org#Albuterol>)
+
+ClassAssertion(<http://www.pharmaceutical.org#ActiveIngredient> <http://www.pharmaceutical.org#Albuterol>)
+
+# Individual: <http://www.pharmaceutical.org#Albuterol_Inhalation_Solution> (<http://www.pharmaceutical.org#Albuterol_Inhalation_Solution>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Injection> <http://www.pharmaceutical.org#Albuterol_Inhalation_Solution>)
+
+# Individual: <http://www.pharmaceutical.org#Allergic_Rhinitis> (<http://www.pharmaceutical.org#Allergic_Rhinitis>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Disease_Condition> <http://www.pharmaceutical.org#Allergic_Rhinitis>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Treatment> <http://www.pharmaceutical.org#Allergic_Rhinitis> <http://www.pharmaceutical.org#Antihistamine>)
+
+# Individual: <http://www.pharmaceutical.org#Amoxicillin> (<http://www.pharmaceutical.org#Amoxicillin>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Antibiotics> <http://www.pharmaceutical.org#Amoxicillin>)
+ClassAssertion(<http://www.pharmaceutical.org#Recommended_Dosage> <http://www.pharmaceutical.org#Amoxicillin>)
+ClassAssertion(<http://www.pharmaceutical.org#approved> <http://www.pharmaceutical.org#Amoxicillin>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Recommended_Dosage> <http://www.pharmaceutical.org#Amoxicillin> <http://www.pharmaceutical.org#Amoxicillin_Standard_Dosage>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Regulatory_Approval_Status> <http://www.pharmaceutical.org#Amoxicillin> <http://www.pharmaceutical.org#Amoxicillin_Approved>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#is_In_Essential_Medicines_List> <http://www.pharmaceutical.org#Amoxicillin> <http://www.pharmaceutical.org#Amoxicillin_EML_Entry>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#is_In_Essential_Medicines_List> <http://www.pharmaceutical.org#Amoxicillin> <http://www.pharmaceutical.org#WHO_EML_2023>)
+DataPropertyAssertion(<http://www.pharmaceutical.org#emlTherapeuticCategory> <http://www.pharmaceutical.org#Amoxicillin> "Antibacterials")
+
+# Individual: <http://www.pharmaceutical.org#Amoxicillin_Approved> (<http://www.pharmaceutical.org#Amoxicillin_Approved>)
+
+AnnotationAssertion(<http://www.pharmaceutical.org#approvalDate> <http://www.pharmaceutical.org#Amoxicillin_Approved> "1972-01-01"^^xsd:date)
+ClassAssertion(<http://www.pharmaceutical.org#approved> <http://www.pharmaceutical.org#Amoxicillin_Approved>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Regulatory_Approval_Status> <http://www.pharmaceutical.org#Amoxicillin_Approved> <http://www.pharmaceutical.org#Amoxicillin>)
+
+# Individual: <http://www.pharmaceutical.org#Amoxicillin_EML_Entry> (<http://www.pharmaceutical.org#Amoxicillin_EML_Entry>)
+
+AnnotationAssertion(rdfs:comment <http://www.pharmaceutical.org#Amoxicillin_EML_Entry> "Amoxicillin is included in the WHO Model List of Essential Medicines")
+ClassAssertion(<http://www.pharmaceutical.org#Essential_Medicines_List> <http://www.pharmaceutical.org#Amoxicillin_EML_Entry>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#is_In_Essential_Medicines_List> <http://www.pharmaceutical.org#Amoxicillin_EML_Entry> <http://www.pharmaceutical.org#WHO_EML_2023>)
+
+# Individual: <http://www.pharmaceutical.org#Amoxicillin_Standard_Dosage> (<http://www.pharmaceutical.org#Amoxicillin_Standard_Dosage>)
+
+AnnotationAssertion(<http://www.pharmaceutical.org#dosageAmount> <http://www.pharmaceutical.org#Amoxicillin_Standard_Dosage> "250-500mg")
+AnnotationAssertion(<http://www.pharmaceutical.org#frequency> <http://www.pharmaceutical.org#Amoxicillin_Standard_Dosage> "every 8 hours")
+ClassAssertion(<http://www.pharmaceutical.org#Recommended_Dosage> <http://www.pharmaceutical.org#Amoxicillin_Standard_Dosage>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Recommended_Dosage> <http://www.pharmaceutical.org#Amoxicillin_Standard_Dosage> <http://www.pharmaceutical.org#Amoxicillin>)
+
+# Individual: <http://www.pharmaceutical.org#Amoxicillin_Storage> (<http://www.pharmaceutical.org#Amoxicillin_Storage>)
+
+AnnotationAssertion(<http://www.pharmaceutical.org#storageCondition> <http://www.pharmaceutical.org#Amoxicillin_Storage> "Room temperature")
+ClassAssertion(<http://www.pharmaceutical.org#Storage_Requirement> <http://www.pharmaceutical.org#Amoxicillin_Storage>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Storage_Requirement> <http://www.pharmaceutical.org#Amoxicillin_Storage> <http://www.pharmaceutical.org#Amoxicillin>)
+
+# Individual: <http://www.pharmaceutical.org#Analgesics> (<http://www.pharmaceutical.org#Analgesics>)
+
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Regulatory_Approval_Status> <http://www.pharmaceutical.org#Analgesics> <http://www.pharmaceutical.org#approved>)
+
+# Individual: <http://www.pharmaceutical.org#Angiotensin-converting_enzyme_inhibition> (<http://www.pharmaceutical.org#Angiotensin-converting_enzyme_inhibition>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Mechanism_Of_Action> <http://www.pharmaceutical.org#Angiotensin-converting_enzyme_inhibition>)
+
+# Individual: <http://www.pharmaceutical.org#Anti-inflammatory_effects_via_glucocorticoid_receptor_activation> (<http://www.pharmaceutical.org#Anti-inflammatory_effects_via_glucocorticoid_receptor_activation>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Mechanism_Of_Action> <http://www.pharmaceutical.org#Anti-inflammatory_effects_via_glucocorticoid_receptor_activation>)
+
+# Individual: <http://www.pharmaceutical.org#Antibiotics> (<http://www.pharmaceutical.org#Antibiotics>)
+
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Regulatory_Approval_Status> <http://www.pharmaceutical.org#Antibiotics> <http://www.pharmaceutical.org#approved>)
+
+# Individual: <http://www.pharmaceutical.org#Anticonvulsants> (<http://www.pharmaceutical.org#Anticonvulsants>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Treatment> <http://www.pharmaceutical.org#Anticonvulsants>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Active_Ingredient> <http://www.pharmaceutical.org#Anticonvulsants> <http://www.pharmaceutical.org#Lamotrigine>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Brand_Name> <http://www.pharmaceutical.org#Anticonvulsants> <http://www.pharmaceutical.org#Lamictal>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Contraindication> <http://www.pharmaceutical.org#Anticonvulsants> <http://www.pharmaceutical.org#Hypersensitivity_to_active_ingredient>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Mechanism_Of_Action> <http://www.pharmaceutical.org#Anticonvulsants> <http://www.pharmaceutical.org#Modulation_of_neurotransmitter_activity>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Side_Effect> <http://www.pharmaceutical.org#Anticonvulsants> <http://www.pharmaceutical.org#Dizziness>)
+
+# Individual: <http://www.pharmaceutical.org#Antidepressant> (<http://www.pharmaceutical.org#Antidepressant>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Treatment> <http://www.pharmaceutical.org#Antidepressant>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Active_Ingredient> <http://www.pharmaceutical.org#Antidepressant> <http://www.pharmaceutical.org#Sertraline>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Brand_Name> <http://www.pharmaceutical.org#Antidepressant> <http://www.pharmaceutical.org#Zoloft>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Contraindication> <http://www.pharmaceutical.org#Antidepressant> <http://www.pharmaceutical.org#Monoamine_oxidase_inhibitor_use>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Mechanism_Of_Action> <http://www.pharmaceutical.org#Antidepressant> <http://www.pharmaceutical.org#Serotonin_reuptake_inhibition>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Side_Effect> <http://www.pharmaceutical.org#Antidepressant> <http://www.pharmaceutical.org#Weight_gain>)
+
+# Individual: <http://www.pharmaceutical.org#Antihistamine> (<http://www.pharmaceutical.org#Antihistamine>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Treatment> <http://www.pharmaceutical.org#Antihistamine>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Active_Ingredient> <http://www.pharmaceutical.org#Antihistamine> <http://www.pharmaceutical.org#Cetirizine>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Brand_Name> <http://www.pharmaceutical.org#Antihistamine> <http://www.pharmaceutical.org#Zyrtec>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Contraindication> <http://www.pharmaceutical.org#Antihistamine> <http://www.pharmaceutical.org#Narrow_angle_glaucoma>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Mechanism_Of_Action> <http://www.pharmaceutical.org#Antihistamine> <http://www.pharmaceutical.org#Histamine_H1_receptor_blockade>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Side_Effect> <http://www.pharmaceutical.org#Antihistamine> <http://www.pharmaceutical.org#Drowsiness>)
+
+# Individual: <http://www.pharmaceutical.org#Aspirin> (<http://www.pharmaceutical.org#Aspirin>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Analgesics> <http://www.pharmaceutical.org#Aspirin>)
+
+# Individual: <http://www.pharmaceutical.org#Asthma> (<http://www.pharmaceutical.org#Asthma>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Disease_Condition> <http://www.pharmaceutical.org#Asthma>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Treatment> <http://www.pharmaceutical.org#Asthma> <http://www.pharmaceutical.org#Bronchodilator>)
+
+# Individual: <http://www.pharmaceutical.org#Atorvastatin> (<http://www.pharmaceutical.org#Atorvastatin>)
+
+ClassAssertion(<http://www.pharmaceutical.org#ActiveIngredient> <http://www.pharmaceutical.org#Atorvastatin>)
+ClassAssertion(<http://www.pharmaceutical.org#Prescription> <http://www.pharmaceutical.org#Atorvastatin>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Legal_Classification> <http://www.pharmaceutical.org#Atorvastatin> <http://www.pharmaceutical.org#Atorvastatin_Rx>)
+
+# Individual: <http://www.pharmaceutical.org#Atorvastatin_Approved> (<http://www.pharmaceutical.org#Atorvastatin_Approved>)
+
+ClassAssertion(<http://www.pharmaceutical.org#approved> <http://www.pharmaceutical.org#Atorvastatin_Approved>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Regulatory_Approval_Status> <http://www.pharmaceutical.org#Atorvastatin_Approved> <http://www.pharmaceutical.org#Atorvastatin>)
+
+# Individual: <http://www.pharmaceutical.org#Atorvastatin_HalfLife> (<http://www.pharmaceutical.org#Atorvastatin_HalfLife>)
+
+AnnotationAssertion(<http://www.pharmaceutical.org#halfLifeValue> <http://www.pharmaceutical.org#Atorvastatin_HalfLife> "14.0"^^xsd:float)
+ClassAssertion(<http://www.pharmaceutical.org#HalfLife> <http://www.pharmaceutical.org#Atorvastatin_HalfLife>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Half_Life> <http://www.pharmaceutical.org#Atorvastatin_HalfLife> <http://www.pharmaceutical.org#Atorvastatin>)
+
+# Individual: <http://www.pharmaceutical.org#Atorvastatin_Rx> (<http://www.pharmaceutical.org#Atorvastatin_Rx>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Prescription> <http://www.pharmaceutical.org#Atorvastatin_Rx>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Legal_Classification> <http://www.pharmaceutical.org#Atorvastatin_Rx> <http://www.pharmaceutical.org#Atorvastatin>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#isClassificationOf> <http://www.pharmaceutical.org#Atorvastatin_Rx> <http://www.pharmaceutical.org#Atorvastatin>)
+
+# Individual: <http://www.pharmaceutical.org#Atorvastatin_Standard_Dosage> (<http://www.pharmaceutical.org#Atorvastatin_Standard_Dosage>)
+
+AnnotationAssertion(<http://www.pharmaceutical.org#dosageAmount> <http://www.pharmaceutical.org#Atorvastatin_Standard_Dosage> "10-80mg")
+AnnotationAssertion(<http://www.pharmaceutical.org#frequency> <http://www.pharmaceutical.org#Atorvastatin_Standard_Dosage> "once daily")
+ClassAssertion(<http://www.pharmaceutical.org#Recommended_Dosage> <http://www.pharmaceutical.org#Atorvastatin_Standard_Dosage>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Recommended_Dosage> <http://www.pharmaceutical.org#Atorvastatin_Standard_Dosage> <http://www.pharmaceutical.org#Atorvastatin>)
+
+# Individual: <http://www.pharmaceutical.org#Azithromycin> (<http://www.pharmaceutical.org#Azithromycin>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Antibiotics> <http://www.pharmaceutical.org#Azithromycin>)
+
+# Individual: <http://www.pharmaceutical.org#Benralizumab> (<http://www.pharmaceutical.org#Benralizumab>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Injection> <http://www.pharmaceutical.org#Benralizumab>)
+ClassAssertion(<http://www.pharmaceutical.org#pending> <http://www.pharmaceutical.org#Benralizumab>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Regulatory_Approval_Status> <http://www.pharmaceutical.org#Benralizumab> <http://www.pharmaceutical.org#Benralizumab_Pending>)
+
+# Individual: <http://www.pharmaceutical.org#Benralizumab_Pending> (<http://www.pharmaceutical.org#Benralizumab_Pending>)
+
+ClassAssertion(<http://www.pharmaceutical.org#pending> <http://www.pharmaceutical.org#Benralizumab_Pending>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Regulatory_Approval_Status> <http://www.pharmaceutical.org#Benralizumab_Pending> <http://www.pharmaceutical.org#Benralizumab>)
+
+# Individual: <http://www.pharmaceutical.org#Beta-2_adrenergic_receptor_agonism> (<http://www.pharmaceutical.org#Beta-2_adrenergic_receptor_agonism>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Mechanism_Of_Action> <http://www.pharmaceutical.org#Beta-2_adrenergic_receptor_agonism>)
+
+# Individual: <http://www.pharmaceutical.org#Beta-Blockers> (<http://www.pharmaceutical.org#Beta-Blockers>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Treatment> <http://www.pharmaceutical.org#Beta-Blockers>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Active_Ingredient> <http://www.pharmaceutical.org#Beta-Blockers> <http://www.pharmaceutical.org#Metoprolol>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Brand_Name> <http://www.pharmaceutical.org#Beta-Blockers> <http://www.pharmaceutical.org#Lopressor>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Contraindication> <http://www.pharmaceutical.org#Beta-Blockers> <http://www.pharmaceutical.org#Severe_bradycardia>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Mechanism_Of_Action> <http://www.pharmaceutical.org#Beta-Blockers> <http://www.pharmaceutical.org#Blockade_of_beta-adrenergic_receptors>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Side_Effect> <http://www.pharmaceutical.org#Beta-Blockers> <http://www.pharmaceutical.org#Fatigue>)
+
+# Individual: <http://www.pharmaceutical.org#Beta-blockers> (<http://www.pharmaceutical.org#Beta-blockers>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Tablet> <http://www.pharmaceutical.org#Beta-blockers>)
+
+# Individual: <http://www.pharmaceutical.org#Blockade_of_beta-adrenergic_receptors> (<http://www.pharmaceutical.org#Blockade_of_beta-adrenergic_receptors>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Mechanism_Of_Action> <http://www.pharmaceutical.org#Blockade_of_beta-adrenergic_receptors>)
+
+# Individual: <http://www.pharmaceutical.org#Bronchodilator> (<http://www.pharmaceutical.org#Bronchodilator>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Treatment> <http://www.pharmaceutical.org#Bronchodilator>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Active_Ingredient> <http://www.pharmaceutical.org#Bronchodilator> <http://www.pharmaceutical.org#Albuterol>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Brand_Name> <http://www.pharmaceutical.org#Bronchodilator> <http://www.pharmaceutical.org#Proventil>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Contraindication> <http://www.pharmaceutical.org#Bronchodilator> <http://www.pharmaceutical.org#Severe_heart_disease>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Mechanism_Of_Action> <http://www.pharmaceutical.org#Bronchodilator> <http://www.pharmaceutical.org#Beta-2_adrenergic_receptor_agonism>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Side_Effect> <http://www.pharmaceutical.org#Bronchodilator> <http://www.pharmaceutical.org#Tremors>)
+
+# Individual: <http://www.pharmaceutical.org#Bronchodilators> (<http://www.pharmaceutical.org#Bronchodilators>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Tablet> <http://www.pharmaceutical.org#Bronchodilators>)
+
+# Individual: <http://www.pharmaceutical.org#Budesonide> (<http://www.pharmaceutical.org#Budesonide>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Capsule> <http://www.pharmaceutical.org#Budesonide>)
+
+# Individual: <http://www.pharmaceutical.org#Carbamazepine> (<http://www.pharmaceutical.org#Carbamazepine>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Tablet> <http://www.pharmaceutical.org#Carbamazepine>)
+
+# Individual: <http://www.pharmaceutical.org#Ceftriaxone> (<http://www.pharmaceutical.org#Ceftriaxone>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Antibiotics> <http://www.pharmaceutical.org#Ceftriaxone>)
+
+# Individual: <http://www.pharmaceutical.org#Celecoxib> (<http://www.pharmaceutical.org#Celecoxib>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Analgesics> <http://www.pharmaceutical.org#Celecoxib>)
+
+# Individual: <http://www.pharmaceutical.org#Cephalexin> (<http://www.pharmaceutical.org#Cephalexin>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Antibiotics> <http://www.pharmaceutical.org#Cephalexin>)
+
+# Individual: <http://www.pharmaceutical.org#Cetirizine> (<http://www.pharmaceutical.org#Cetirizine>)
+
+ClassAssertion(<http://www.pharmaceutical.org#ActiveIngredient> <http://www.pharmaceutical.org#Cetirizine>)
+
+# Individual: <http://www.pharmaceutical.org#Cetirizine_OTC> (<http://www.pharmaceutical.org#Cetirizine_OTC>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Over-the-Counter> <http://www.pharmaceutical.org#Cetirizine_OTC>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Legal_Classification> <http://www.pharmaceutical.org#Cetirizine_OTC> <http://www.pharmaceutical.org#Cetirizine>)
+
+# Individual: <http://www.pharmaceutical.org#Ciprofloxacin> (<http://www.pharmaceutical.org#Ciprofloxacin>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Antibiotics> <http://www.pharmaceutical.org#Ciprofloxacin>)
+
+# Individual: <http://www.pharmaceutical.org#Corticosteroids> (<http://www.pharmaceutical.org#Corticosteroids>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Treatment> <http://www.pharmaceutical.org#Corticosteroids>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Active_Ingredient> <http://www.pharmaceutical.org#Corticosteroids> <http://www.pharmaceutical.org#Prednisone>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Brand_Name> <http://www.pharmaceutical.org#Corticosteroids> <http://www.pharmaceutical.org#Deltasone>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Contraindication> <http://www.pharmaceutical.org#Corticosteroids> <http://www.pharmaceutical.org#Systemic_fungal_infections>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Mechanism_Of_Action> <http://www.pharmaceutical.org#Corticosteroids> <http://www.pharmaceutical.org#Anti-inflammatory_effects_via_glucocorticoid_receptor_activation>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Side_Effect> <http://www.pharmaceutical.org#Corticosteroids> <http://www.pharmaceutical.org#Increased_risk_of_infection>)
+
+# Individual: <http://www.pharmaceutical.org#Cough> (<http://www.pharmaceutical.org#Cough>)
+
+ClassAssertion(<http://www.pharmaceutical.org#SideEffect> <http://www.pharmaceutical.org#Cough>)
+
+# Individual: <http://www.pharmaceutical.org#Deltasone> (<http://www.pharmaceutical.org#Deltasone>)
+
+ClassAssertion(<http://www.pharmaceutical.org#BrandName> <http://www.pharmaceutical.org#Deltasone>)
+
+# Individual: <http://www.pharmaceutical.org#Depression> (<http://www.pharmaceutical.org#Depression>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Disease_Condition> <http://www.pharmaceutical.org#Depression>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Treatment> <http://www.pharmaceutical.org#Depression> <http://www.pharmaceutical.org#Antidepressant>)
+
+# Individual: <http://www.pharmaceutical.org#Diabetes> (<http://www.pharmaceutical.org#Diabetes>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Disease_Condition> <http://www.pharmaceutical.org#Diabetes>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Treatment> <http://www.pharmaceutical.org#Diabetes> <http://www.pharmaceutical.org#Insulin>)
+
+# Individual: <http://www.pharmaceutical.org#Diclofenac> (<http://www.pharmaceutical.org#Diclofenac>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Tablet> <http://www.pharmaceutical.org#Diclofenac>)
+
+# Individual: <http://www.pharmaceutical.org#Diclofenac_> (<http://www.pharmaceutical.org#Diclofenac_>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Analgesics> <http://www.pharmaceutical.org#Diclofenac_>)
+
+# Individual: <http://www.pharmaceutical.org#Diclofenac_Sodium> (<http://www.pharmaceutical.org#Diclofenac_Sodium>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Analgesics> <http://www.pharmaceutical.org#Diclofenac_Sodium>)
+
+# Individual: <http://www.pharmaceutical.org#Diuretics> (<http://www.pharmaceutical.org#Diuretics>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Tablet> <http://www.pharmaceutical.org#Diuretics>)
+
+# Individual: <http://www.pharmaceutical.org#Dizziness> (<http://www.pharmaceutical.org#Dizziness>)
+
+ClassAssertion(<http://www.pharmaceutical.org#SideEffect> <http://www.pharmaceutical.org#Dizziness>)
+
+# Individual: <http://www.pharmaceutical.org#Doxycycline> (<http://www.pharmaceutical.org#Doxycycline>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Antibiotics> <http://www.pharmaceutical.org#Doxycycline>)
+
+# Individual: <http://www.pharmaceutical.org#Drowsiness> (<http://www.pharmaceutical.org#Drowsiness>)
+
+ClassAssertion(<http://www.pharmaceutical.org#SideEffect> <http://www.pharmaceutical.org#Drowsiness>)
+
+# Individual: <http://www.pharmaceutical.org#Duloxetine> (<http://www.pharmaceutical.org#Duloxetine>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Capsule> <http://www.pharmaceutical.org#Duloxetine>)
+
+# Individual: <http://www.pharmaceutical.org#Epilepsy> (<http://www.pharmaceutical.org#Epilepsy>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Disease_Condition> <http://www.pharmaceutical.org#Epilepsy>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Treatment> <http://www.pharmaceutical.org#Epilepsy> <http://www.pharmaceutical.org#Anticonvulsants>)
+
+# Individual: <http://www.pharmaceutical.org#Esketamine_nasal_spray> (<http://www.pharmaceutical.org#Esketamine_nasal_spray>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Injection> <http://www.pharmaceutical.org#Esketamine_nasal_spray>)
+
+# Individual: <http://www.pharmaceutical.org#Experimental_Drug_X_Rejected> (<http://www.pharmaceutical.org#Experimental_Drug_X_Rejected>)
+
+AnnotationAssertion(<http://www.pharmaceutical.org#rejectionReason> <http://www.pharmaceutical.org#Experimental_Drug_X_Rejected> "Safety concerns in Phase III trials")
+ClassAssertion(<http://www.pharmaceutical.org#rejected> <http://www.pharmaceutical.org#Experimental_Drug_X_Rejected>)
+
+# Individual: <http://www.pharmaceutical.org#Fatigue> (<http://www.pharmaceutical.org#Fatigue>)
+
+ClassAssertion(<http://www.pharmaceutical.org#SideEffect> <http://www.pharmaceutical.org#Fatigue>)
+
+# Individual: <http://www.pharmaceutical.org#Fentanyl> (<http://www.pharmaceutical.org#Fentanyl>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Analgesics> <http://www.pharmaceutical.org#Fentanyl>)
+ClassAssertion(<http://www.pharmaceutical.org#Controlled_Substance> <http://www.pharmaceutical.org#Fentanyl>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Legal_Classification> <http://www.pharmaceutical.org#Fentanyl> <http://www.pharmaceutical.org#Fentanyl_CS>)
+
+# Individual: <http://www.pharmaceutical.org#Fentanyl_CS> (<http://www.pharmaceutical.org#Fentanyl_CS>)
+
+AnnotationAssertion(rdfs:comment <http://www.pharmaceutical.org#Fentanyl_CS> "Schedule II controlled substance in most jurisdictions")
+ClassAssertion(<http://www.pharmaceutical.org#Controlled_Substance> <http://www.pharmaceutical.org#Fentanyl_CS>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Legal_Classification> <http://www.pharmaceutical.org#Fentanyl_CS> <http://www.pharmaceutical.org#Fentanyl>)
+
+# Individual: <http://www.pharmaceutical.org#Fluoxetine> (<http://www.pharmaceutical.org#Fluoxetine>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Tablet> <http://www.pharmaceutical.org#Fluoxetine>)
+
+# Individual: <http://www.pharmaceutical.org#Formoterol> (<http://www.pharmaceutical.org#Formoterol>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Capsule> <http://www.pharmaceutical.org#Formoterol>)
+
+# Individual: <http://www.pharmaceutical.org#Gabapentin> (<http://www.pharmaceutical.org#Gabapentin>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Analgesics> <http://www.pharmaceutical.org#Gabapentin>)
+
+# Individual: <http://www.pharmaceutical.org#Gastrointestinal_bleeding> (<http://www.pharmaceutical.org#Gastrointestinal_bleeding>)
+
+ClassAssertion(<http://www.pharmaceutical.org#SideEffect> <http://www.pharmaceutical.org#Gastrointestinal_bleeding>)
+
+# Individual: <http://www.pharmaceutical.org#Glucosamine> (<http://www.pharmaceutical.org#Glucosamine>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Capsule> <http://www.pharmaceutical.org#Glucosamine>)
+
+# Individual: <http://www.pharmaceutical.org#Heart_Failure> (<http://www.pharmaceutical.org#Heart_Failure>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Disease_Condition> <http://www.pharmaceutical.org#Heart_Failure>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Treatment> <http://www.pharmaceutical.org#Heart_Failure> <http://www.pharmaceutical.org#Beta-Blockers>)
+
+# Individual: <http://www.pharmaceutical.org#Histamine_H1_receptor_blockade> (<http://www.pharmaceutical.org#Histamine_H1_receptor_blockade>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Mechanism_Of_Action> <http://www.pharmaceutical.org#Histamine_H1_receptor_blockade>)
+
+# Individual: <http://www.pharmaceutical.org#Humulin> (<http://www.pharmaceutical.org#Humulin>)
+
+ClassAssertion(<http://www.pharmaceutical.org#BrandName> <http://www.pharmaceutical.org#Humulin>)
+
+# Individual: <http://www.pharmaceutical.org#Hyperlipidemia> (<http://www.pharmaceutical.org#Hyperlipidemia>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Disease_Condition> <http://www.pharmaceutical.org#Hyperlipidemia>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Treatment> <http://www.pharmaceutical.org#Hyperlipidemia> <http://www.pharmaceutical.org#Statins>)
+
+# Individual: <http://www.pharmaceutical.org#Hypersensitivity_to_active_ingredient> (<http://www.pharmaceutical.org#Hypersensitivity_to_active_ingredient>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Contraindication> <http://www.pharmaceutical.org#Hypersensitivity_to_active_ingredient>)
+
+# Individual: <http://www.pharmaceutical.org#Hypersensitivity_to_insulin> (<http://www.pharmaceutical.org#Hypersensitivity_to_insulin>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Contraindication> <http://www.pharmaceutical.org#Hypersensitivity_to_insulin>)
+
+# Individual: <http://www.pharmaceutical.org#Hypertension> (<http://www.pharmaceutical.org#Hypertension>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Disease_Condition> <http://www.pharmaceutical.org#Hypertension>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Treatment> <http://www.pharmaceutical.org#Hypertension> <http://www.pharmaceutical.org#ACE_Inhibitor>)
+
+# Individual: <http://www.pharmaceutical.org#Hypoglycemia> (<http://www.pharmaceutical.org#Hypoglycemia>)
+
+ClassAssertion(<http://www.pharmaceutical.org#SideEffect> <http://www.pharmaceutical.org#Hypoglycemia>)
+
+# Individual: <http://www.pharmaceutical.org#IV_Diazepam> (<http://www.pharmaceutical.org#IV_Diazepam>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Injection> <http://www.pharmaceutical.org#IV_Diazepam>)
+
+# Individual: <http://www.pharmaceutical.org#IV_Diuretics> (<http://www.pharmaceutical.org#IV_Diuretics>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Injection> <http://www.pharmaceutical.org#IV_Diuretics>)
+
+# Individual: <http://www.pharmaceutical.org#Ibuprofen> (<http://www.pharmaceutical.org#Ibuprofen>)
+
+ClassAssertion(<http://www.pharmaceutical.org#HalfLife> <http://www.pharmaceutical.org#Ibuprofen>)
+ClassAssertion(<http://www.pharmaceutical.org#Over-the-Counter> <http://www.pharmaceutical.org#Ibuprofen>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Active_Ingredient> <http://www.pharmaceutical.org#Ibuprofen> <http://www.pharmaceutical.org#Ibuprofen>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Half_Life> <http://www.pharmaceutical.org#Ibuprofen> <http://www.pharmaceutical.org#Ibuprofen_HalfLife>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Legal_Classification> <http://www.pharmaceutical.org#Ibuprofen> <http://www.pharmaceutical.org#Ibuprofen_OTC>)
+
+# Individual: <http://www.pharmaceutical.org#Ibuprofen_> (<http://www.pharmaceutical.org#Ibuprofen_>)
+
+ClassAssertion(<http://www.pharmaceutical.org#ActiveIngredient> <http://www.pharmaceutical.org#Ibuprofen_>)
+
+# Individual: <http://www.pharmaceutical.org#Ibuprofen_Capsule> (<http://www.pharmaceutical.org#Ibuprofen_Capsule>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Capsule> <http://www.pharmaceutical.org#Ibuprofen_Capsule>)
+
+# Individual: <http://www.pharmaceutical.org#Ibuprofen_HalfLife> (<http://www.pharmaceutical.org#Ibuprofen_HalfLife>)
+
+AnnotationAssertion(<http://www.pharmaceutical.org#halfLifeUnit> <http://www.pharmaceutical.org#Ibuprofen_HalfLife> "hours")
+AnnotationAssertion(<http://www.pharmaceutical.org#halfLifeValue> <http://www.pharmaceutical.org#Ibuprofen_HalfLife> "2.0"^^xsd:float)
+ClassAssertion(<http://www.pharmaceutical.org#HalfLife> <http://www.pharmaceutical.org#Ibuprofen_HalfLife>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Half_Life> <http://www.pharmaceutical.org#Ibuprofen_HalfLife> <http://www.pharmaceutical.org#Ibuprofen>)
+
+# Individual: <http://www.pharmaceutical.org#Ibuprofen_OTC> (<http://www.pharmaceutical.org#Ibuprofen_OTC>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Over-the-Counter> <http://www.pharmaceutical.org#Ibuprofen_OTC>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Legal_Classification> <http://www.pharmaceutical.org#Ibuprofen_OTC> <http://www.pharmaceutical.org#Ibuprofen>)
+
+# Individual: <http://www.pharmaceutical.org#Immunotherapy_shots> (<http://www.pharmaceutical.org#Immunotherapy_shots>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Injection> <http://www.pharmaceutical.org#Immunotherapy_shots>)
+
+# Individual: <http://www.pharmaceutical.org#Increased_risk_of_infection> (<http://www.pharmaceutical.org#Increased_risk_of_infection>)
+
+ClassAssertion(<http://www.pharmaceutical.org#SideEffect> <http://www.pharmaceutical.org#Increased_risk_of_infection>)
+
+# Individual: <http://www.pharmaceutical.org#Inhibition_of_HMG-CoA_reductase> (<http://www.pharmaceutical.org#Inhibition_of_HMG-CoA_reductase>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Mechanism_Of_Action> <http://www.pharmaceutical.org#Inhibition_of_HMG-CoA_reductase>)
+
+# Individual: <http://www.pharmaceutical.org#Inhibition_of_cyclooxygenase_enzyme> (<http://www.pharmaceutical.org#Inhibition_of_cyclooxygenase_enzyme>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Mechanism_Of_Action> <http://www.pharmaceutical.org#Inhibition_of_cyclooxygenase_enzyme>)
+
+# Individual: <http://www.pharmaceutical.org#Insulin> (<http://www.pharmaceutical.org#Insulin>)
+
+AnnotationAssertion(rdfs:comment <http://www.pharmaceutical.org#Insulin> ":Insulin a :Pharmaceutical_Drug ;
+  rdfs:label \"Insulin\" ;
+  :generic_Name \"Insulin\" ;
+  :brand_Name \"Humulin, Novolin, Lantus, Levemir, etc.\" ;
+  :active_Ingredient \"Insulin\" ;
+  :dosage_Form \"Injection\" ;
+  :mechanism_Of_Action \"Insulin receptor agonist; facilitates cellular glucose uptake\" ;
+  :contraindication \"Hypoglycemia, hypersensitivity to insulin\" ;
+  :side_Effect \"Hypoglycemia, weight gain, injection site reactions\" ;
+  :recommended_Dosage \"Individualized based on blood glucose monitoring\" ;
+  :half_Life \"Varies by insulin type (short-acting, long-acting)\" ;
+  :storage_Requirement \"Refrigerate between 2°C–8°C; do not freeze\" ;
+  :legal_Classification \"Prescription\" ;
+  :regulatory_Approval_Status \"approved\" ;
+  :'EML therapeutic category' \"Insulin and other medicines used for diabetes\" ;
+  :'is in essential medicines list' \"true\" .")
+ClassAssertion(<http://www.pharmaceutical.org#Storage_Requirement> <http://www.pharmaceutical.org#Insulin>)
+ClassAssertion(<http://www.pharmaceutical.org#Treatment> <http://www.pharmaceutical.org#Insulin>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Brand_Name> <http://www.pharmaceutical.org#Insulin> <http://www.pharmaceutical.org#Humulin>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Contraindication> <http://www.pharmaceutical.org#Insulin> <http://www.pharmaceutical.org#Hypersensitivity_to_insulin>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Mechanism_Of_Action> <http://www.pharmaceutical.org#Insulin> <http://www.pharmaceutical.org#Insulin_receptor_agonist>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Side_Effect> <http://www.pharmaceutical.org#Insulin> <http://www.pharmaceutical.org#Hypoglycemia>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Storage_Requirement> <http://www.pharmaceutical.org#Insulin> <http://www.pharmaceutical.org#Insulin_Storage>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#is_In_Essential_Medicines_List> <http://www.pharmaceutical.org#Insulin> <http://www.pharmaceutical.org#Insulin_EML_Entry>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#is_In_Essential_Medicines_List> <http://www.pharmaceutical.org#Insulin> <http://www.pharmaceutical.org#WHO_EML_2023>)
+DataPropertyAssertion(<http://www.pharmaceutical.org#emlTherapeuticCategory> <http://www.pharmaceutical.org#Insulin> "Antidiabetics")
+
+# Individual: <http://www.pharmaceutical.org#Insulin_EML_Entry> (<http://www.pharmaceutical.org#Insulin_EML_Entry>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Essential_Medicines_List> <http://www.pharmaceutical.org#Insulin_EML_Entry>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#is_In_Essential_Medicines_List> <http://www.pharmaceutical.org#Insulin_EML_Entry> <http://www.pharmaceutical.org#WHO_EML_2023>)
+
+# Individual: <http://www.pharmaceutical.org#Insulin_Injection> (<http://www.pharmaceutical.org#Insulin_Injection>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Injection> <http://www.pharmaceutical.org#Insulin_Injection>)
+
+# Individual: <http://www.pharmaceutical.org#Insulin_Storage> (<http://www.pharmaceutical.org#Insulin_Storage>)
+
+AnnotationAssertion(<http://www.pharmaceutical.org#storageCondition> <http://www.pharmaceutical.org#Insulin_Storage> "Refrigerate at 2-8°C")
+ClassAssertion(<http://www.pharmaceutical.org#Storage_Requirement> <http://www.pharmaceutical.org#Insulin_Storage>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Storage_Requirement> <http://www.pharmaceutical.org#Insulin_Storage> <http://www.pharmaceutical.org#Insulin>)
+
+# Individual: <http://www.pharmaceutical.org#Insulin_injections> (<http://www.pharmaceutical.org#Insulin_injections>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Injection> <http://www.pharmaceutical.org#Insulin_injections>)
+
+# Individual: <http://www.pharmaceutical.org#Insulin_receptor_agonist> (<http://www.pharmaceutical.org#Insulin_receptor_agonist>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Mechanism_Of_Action> <http://www.pharmaceutical.org#Insulin_receptor_agonist>)
+
+# Individual: <http://www.pharmaceutical.org#Ketorolac> (<http://www.pharmaceutical.org#Ketorolac>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Analgesics> <http://www.pharmaceutical.org#Ketorolac>)
+
+# Individual: <http://www.pharmaceutical.org#Lamictal> (<http://www.pharmaceutical.org#Lamictal>)
+
+ClassAssertion(<http://www.pharmaceutical.org#BrandName> <http://www.pharmaceutical.org#Lamictal>)
+
+# Individual: <http://www.pharmaceutical.org#Lamotrigine> (<http://www.pharmaceutical.org#Lamotrigine>)
+
+ClassAssertion(<http://www.pharmaceutical.org#ActiveIngredient> <http://www.pharmaceutical.org#Lamotrigine>)
+
+# Individual: <http://www.pharmaceutical.org#Lipitor> (<http://www.pharmaceutical.org#Lipitor>)
+
+ClassAssertion(<http://www.pharmaceutical.org#BrandName> <http://www.pharmaceutical.org#Lipitor>)
+
+# Individual: <http://www.pharmaceutical.org#Lisinopril> (<http://www.pharmaceutical.org#Lisinopril>)
+
+ClassAssertion(<http://www.pharmaceutical.org#ActiveIngredient> <http://www.pharmaceutical.org#Lisinopril>)
+
+# Individual: <http://www.pharmaceutical.org#Lisinopril_Tablet> (<http://www.pharmaceutical.org#Lisinopril_Tablet>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Tablet> <http://www.pharmaceutical.org#Lisinopril_Tablet>)
+
+# Individual: <http://www.pharmaceutical.org#Lopressor> (<http://www.pharmaceutical.org#Lopressor>)
+
+ClassAssertion(<http://www.pharmaceutical.org#BrandName> <http://www.pharmaceutical.org#Lopressor>)
+
+# Individual: <http://www.pharmaceutical.org#Loratadine> (<http://www.pharmaceutical.org#Loratadine>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Tablet> <http://www.pharmaceutical.org#Loratadine>)
+
+# Individual: <http://www.pharmaceutical.org#Meropenem> (<http://www.pharmaceutical.org#Meropenem>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Antibiotics> <http://www.pharmaceutical.org#Meropenem>)
+
+# Individual: <http://www.pharmaceutical.org#Metoprolol> (<http://www.pharmaceutical.org#Metoprolol>)
+
+ClassAssertion(<http://www.pharmaceutical.org#ActiveIngredient> <http://www.pharmaceutical.org#Metoprolol>)
+
+# Individual: <http://www.pharmaceutical.org#Modulation_of_neurotransmitter_activity> (<http://www.pharmaceutical.org#Modulation_of_neurotransmitter_activity>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Mechanism_Of_Action> <http://www.pharmaceutical.org#Modulation_of_neurotransmitter_activity>)
+
+# Individual: <http://www.pharmaceutical.org#Monoamine_oxidase_inhibitor_use> (<http://www.pharmaceutical.org#Monoamine_oxidase_inhibitor_use>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Contraindication> <http://www.pharmaceutical.org#Monoamine_oxidase_inhibitor_use>)
+
+# Individual: <http://www.pharmaceutical.org#Montelukast> (<http://www.pharmaceutical.org#Montelukast>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Tablet> <http://www.pharmaceutical.org#Montelukast>)
+
+# Individual: <http://www.pharmaceutical.org#Morphine> (<http://www.pharmaceutical.org#Morphine>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Analgesics> <http://www.pharmaceutical.org#Morphine>)
+
+# Individual: <http://www.pharmaceutical.org#Morphine_CS> (<http://www.pharmaceutical.org#Morphine_CS>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Controlled_Substance> <http://www.pharmaceutical.org#Morphine_CS>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Legal_Classification> <http://www.pharmaceutical.org#Morphine_CS> <http://www.pharmaceutical.org#Morphine>)
+
+# Individual: <http://www.pharmaceutical.org#Muscle_pain> (<http://www.pharmaceutical.org#Muscle_pain>)
+
+ClassAssertion(<http://www.pharmaceutical.org#SideEffect> <http://www.pharmaceutical.org#Muscle_pain>)
+
+# Individual: <http://www.pharmaceutical.org#Narrow_angle_glaucoma> (<http://www.pharmaceutical.org#Narrow_angle_glaucoma>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Contraindication> <http://www.pharmaceutical.org#Narrow_angle_glaucoma>)
+
+# Individual: <http://www.pharmaceutical.org#Non-Steroidal_Anti-Inflammatory_Drug> (<http://www.pharmaceutical.org#Non-Steroidal_Anti-Inflammatory_Drug>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Treatment> <http://www.pharmaceutical.org#Non-Steroidal_Anti-Inflammatory_Drug>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Active_Ingredient> <http://www.pharmaceutical.org#Non-Steroidal_Anti-Inflammatory_Drug> <http://www.pharmaceutical.org#Ibuprofen_>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Brand_Name> <http://www.pharmaceutical.org#Non-Steroidal_Anti-Inflammatory_Drug> <http://www.pharmaceutical.org#Advil>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Contraindication> <http://www.pharmaceutical.org#Non-Steroidal_Anti-Inflammatory_Drug> <http://www.pharmaceutical.org#Active_gastrointestinal_bleeding>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Mechanism_Of_Action> <http://www.pharmaceutical.org#Non-Steroidal_Anti-Inflammatory_Drug> <http://www.pharmaceutical.org#Inhibition_of_cyclooxygenase_enzyme>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Side_Effect> <http://www.pharmaceutical.org#Non-Steroidal_Anti-Inflammatory_Drug> <http://www.pharmaceutical.org#Gastrointestinal_bleeding>)
+
+# Individual: <http://www.pharmaceutical.org#Omalizumab> (<http://www.pharmaceutical.org#Omalizumab>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Injection> <http://www.pharmaceutical.org#Omalizumab>)
+
+# Individual: <http://www.pharmaceutical.org#Omega-3_fatty_acid> (<http://www.pharmaceutical.org#Omega-3_fatty_acid>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Capsule> <http://www.pharmaceutical.org#Omega-3_fatty_acid>)
+
+# Individual: <http://www.pharmaceutical.org#Osteoarthritis> (<http://www.pharmaceutical.org#Osteoarthritis>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Disease_Condition> <http://www.pharmaceutical.org#Osteoarthritis>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Treatment> <http://www.pharmaceutical.org#Osteoarthritis> <http://www.pharmaceutical.org#Non-Steroidal_Anti-Inflammatory_Drug>)
+
+# Individual: <http://www.pharmaceutical.org#PCSK9_inhibitors> (<http://www.pharmaceutical.org#PCSK9_inhibitors>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Injection> <http://www.pharmaceutical.org#PCSK9_inhibitors>)
+
+# Individual: <http://www.pharmaceutical.org#Paracetamol> (<http://www.pharmaceutical.org#Paracetamol>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Analgesics> <http://www.pharmaceutical.org#Paracetamol>)
+
+# Individual: <http://www.pharmaceutical.org#Prednisone> (<http://www.pharmaceutical.org#Prednisone>)
+
+ClassAssertion(<http://www.pharmaceutical.org#ActiveIngredient> <http://www.pharmaceutical.org#Prednisone>)
+
+# Individual: <http://www.pharmaceutical.org#Prednisone_Capsule> (<http://www.pharmaceutical.org#Prednisone_Capsule>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Capsule> <http://www.pharmaceutical.org#Prednisone_Capsule>)
+
+# Individual: <http://www.pharmaceutical.org#Pregabalin> (<http://www.pharmaceutical.org#Pregabalin>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Capsule> <http://www.pharmaceutical.org#Pregabalin>)
+
+# Individual: <http://www.pharmaceutical.org#Pregabalin_> (<http://www.pharmaceutical.org#Pregabalin_>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Analgesics> <http://www.pharmaceutical.org#Pregabalin_>)
+
+# Individual: <http://www.pharmaceutical.org#Pregnancy> (<http://www.pharmaceutical.org#Pregnancy>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Contraindication> <http://www.pharmaceutical.org#Pregnancy>)
+
+# Individual: <http://www.pharmaceutical.org#Proventil> (<http://www.pharmaceutical.org#Proventil>)
+
+ClassAssertion(<http://www.pharmaceutical.org#BrandName> <http://www.pharmaceutical.org#Proventil>)
+
+# Individual: <http://www.pharmaceutical.org#Rifampicin> (<http://www.pharmaceutical.org#Rifampicin>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Antibiotics> <http://www.pharmaceutical.org#Rifampicin>)
+
+# Individual: <http://www.pharmaceutical.org#Rosuvastatin> (<http://www.pharmaceutical.org#Rosuvastatin>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Tablet> <http://www.pharmaceutical.org#Rosuvastatin>)
+
+# Individual: <http://www.pharmaceutical.org#Serotonin_reuptake_inhibition> (<http://www.pharmaceutical.org#Serotonin_reuptake_inhibition>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Mechanism_Of_Action> <http://www.pharmaceutical.org#Serotonin_reuptake_inhibition>)
+
+# Individual: <http://www.pharmaceutical.org#Sertraline> (<http://www.pharmaceutical.org#Sertraline>)
+
+ClassAssertion(<http://www.pharmaceutical.org#ActiveIngredient> <http://www.pharmaceutical.org#Sertraline>)
+
+# Individual: <http://www.pharmaceutical.org#Sertraline_Rx> (<http://www.pharmaceutical.org#Sertraline_Rx>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Prescription> <http://www.pharmaceutical.org#Sertraline_Rx>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Legal_Classification> <http://www.pharmaceutical.org#Sertraline_Rx> <http://www.pharmaceutical.org#Sertraline>)
+
+# Individual: <http://www.pharmaceutical.org#Sertraline_Tablet> (<http://www.pharmaceutical.org#Sertraline_Tablet>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Tablet> <http://www.pharmaceutical.org#Sertraline_Tablet>)
+
+# Individual: <http://www.pharmaceutical.org#Severe_bradycardia> (<http://www.pharmaceutical.org#Severe_bradycardia>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Contraindication> <http://www.pharmaceutical.org#Severe_bradycardia>)
+
+# Individual: <http://www.pharmaceutical.org#Severe_heart_disease> (<http://www.pharmaceutical.org#Severe_heart_disease>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Contraindication> <http://www.pharmaceutical.org#Severe_heart_disease>)
+
+# Individual: <http://www.pharmaceutical.org#Statins> (<http://www.pharmaceutical.org#Statins>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Treatment> <http://www.pharmaceutical.org#Statins>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Active_Ingredient> <http://www.pharmaceutical.org#Statins> <http://www.pharmaceutical.org#Atorvastatin>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Active_Ingredient> <http://www.pharmaceutical.org#Statins> <http://www.pharmaceutical.org#Metoprolol>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Brand_Name> <http://www.pharmaceutical.org#Statins> <http://www.pharmaceutical.org#Lipitor>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Contraindication> <http://www.pharmaceutical.org#Statins> <http://www.pharmaceutical.org#Active_liver_disease>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Mechanism_Of_Action> <http://www.pharmaceutical.org#Statins> <http://www.pharmaceutical.org#Inhibition_of_HMG-CoA_reductase>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Side_Effect> <http://www.pharmaceutical.org#Statins> <http://www.pharmaceutical.org#Muscle_pain>)
+
+# Individual: <http://www.pharmaceutical.org#Systemic_fungal_infections> (<http://www.pharmaceutical.org#Systemic_fungal_infections>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Contraindication> <http://www.pharmaceutical.org#Systemic_fungal_infections>)
+
+# Individual: <http://www.pharmaceutical.org#Tablet> (<http://www.pharmaceutical.org#Tablet>)
+
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Dosage_Form> <http://www.pharmaceutical.org#Tablet> <http://www.pharmaceutical.org#Tablet>)
+
+# Individual: <http://www.pharmaceutical.org#Tiotropium> (<http://www.pharmaceutical.org#Tiotropium>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Capsule> <http://www.pharmaceutical.org#Tiotropium>)
+
+# Individual: <http://www.pharmaceutical.org#Tramadol> (<http://www.pharmaceutical.org#Tramadol>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Analgesics> <http://www.pharmaceutical.org#Tramadol>)
+
+# Individual: <http://www.pharmaceutical.org#Tremors> (<http://www.pharmaceutical.org#Tremors>)
+
+ClassAssertion(<http://www.pharmaceutical.org#SideEffect> <http://www.pharmaceutical.org#Tremors>)
+
+# Individual: <http://www.pharmaceutical.org#WHO_EML_2023> (WHO Essential Medicines List 2023)
+
+AnnotationAssertion(<http://www.pharmaceutical.org#authority> <http://www.pharmaceutical.org#WHO_EML_2023> <http://www.who.int>)
+AnnotationAssertion(<http://www.pharmaceutical.org#publicationDate> <http://www.pharmaceutical.org#WHO_EML_2023> "2023-07-24"^^xsd:date)
+AnnotationAssertion(<http://www.pharmaceutical.org#version> <http://www.pharmaceutical.org#WHO_EML_2023> "23.1")
+AnnotationAssertion(rdfs:comment <http://www.pharmaceutical.org#WHO_EML_2023> "The 23rd edition of the WHO Model List of Essential Medicines published in 2023")
+AnnotationAssertion(rdfs:label <http://www.pharmaceutical.org#WHO_EML_2023> "WHO Essential Medicines List 2023")
+ClassAssertion(<http://www.pharmaceutical.org#Essential_Medicines_List> <http://www.pharmaceutical.org#WHO_EML_2023>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#includes_Drug> <http://www.pharmaceutical.org#WHO_EML_2023> <http://www.pharmaceutical.org#Amoxicillin>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#includes_Drug> <http://www.pharmaceutical.org#WHO_EML_2023> <http://www.pharmaceutical.org#Insulin>)
+
+# Individual: <http://www.pharmaceutical.org#Weight_gain> (<http://www.pharmaceutical.org#Weight_gain>)
+
+ClassAssertion(<http://www.pharmaceutical.org#SideEffect> <http://www.pharmaceutical.org#Weight_gain>)
+
+# Individual: <http://www.pharmaceutical.org#Zestril> (<http://www.pharmaceutical.org#Zestril>)
+
+ClassAssertion(<http://www.pharmaceutical.org#BrandName> <http://www.pharmaceutical.org#Zestril>)
+
+# Individual: <http://www.pharmaceutical.org#Zoloft> (<http://www.pharmaceutical.org#Zoloft>)
+
+ClassAssertion(<http://www.pharmaceutical.org#BrandName> <http://www.pharmaceutical.org#Zoloft>)
+
+# Individual: <http://www.pharmaceutical.org#Zyrtec> (<http://www.pharmaceutical.org#Zyrtec>)
+
+ClassAssertion(<http://www.pharmaceutical.org#BrandName> <http://www.pharmaceutical.org#Zyrtec>)
+
+# Individual: <http://www.pharmaceutical.org#insulin_analogs> (<http://www.pharmaceutical.org#insulin_analogs>)
+
+ClassAssertion(<http://www.pharmaceutical.org#ActiveIngredient> <http://www.pharmaceutical.org#insulin_analogs>)
+
+# Individual: <http://www.pharmaceutical.org#panadol> (<http://www.pharmaceutical.org#panadol>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Analgesics> <http://www.pharmaceutical.org#panadol>)
+
+# Individual: <http://www.pharmaceutical.org#Amoxicillin_+_Clavulanic_Acid> (<http://www.pharmaceutical.org#Amoxicillin_+_Clavulanic_Acid>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Antibiotics> <http://www.pharmaceutical.org#Amoxicillin_+_Clavulanic_Acid>)
+
+# Individual: <http://www.pharmaceutical.org#Chronic_Obstructive_Pulmonary_Disease_(COPD)> (<http://www.pharmaceutical.org#Chronic_Obstructive_Pulmonary_Disease_(COPD)>)
+
+ClassAssertion(<http://www.pharmaceutical.org#Disease_Condition> <http://www.pharmaceutical.org#Chronic_Obstructive_Pulmonary_Disease_(COPD)>)
+ObjectPropertyAssertion(<http://www.pharmaceutical.org#has_Treatment> <http://www.pharmaceutical.org#Chronic_Obstructive_Pulmonary_Disease_(COPD)> <http://www.pharmaceutical.org#Corticosteroids>)
+DataPropertyAssertion(<http://www.pharmaceutical.org#contraindication> <http://www.pharmaceutical.org#Chronic_Obstructive_Pulmonary_Disease_(COPD)> "Beta-blockers may worsen symptoms in some cases")
+DataPropertyAssertion(<http://www.pharmaceutical.org#recommended_Dosage> <http://www.pharmaceutical.org#Chronic_Obstructive_Pulmonary_Disease_(COPD)> "Varies depending on severity and prescribed medications")
+DataPropertyAssertion(<http://www.pharmaceutical.org#side_Effect> <http://www.pharmaceutical.org#Chronic_Obstructive_Pulmonary_Disease_(COPD)> "Difficulty breathing, fatigue, frequent respiratory infections")
+
+
+)
